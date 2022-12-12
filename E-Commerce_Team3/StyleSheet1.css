@@ -1,0 +1,26 @@
+﻿body {
+}
+
+Container {
+    max-width: 900px;
+}
+
+#CarouselSofa {
+    background-image: url('img/poltrona1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+    background-color: #e3e9e1;
+}
+
+#CarouselDivani {
+    background-image: url('img/divanonewstylish.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+    background-color: #e2eeec;
+}
+
+.slider {
+    margin: 4em 7em;
+}
