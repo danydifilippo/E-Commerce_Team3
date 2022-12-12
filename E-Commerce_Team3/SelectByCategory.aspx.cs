@@ -11,7 +11,10 @@ namespace E_Commerce_Team3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string id = Request.QueryString["IdCategoria"];
+
 
         }
     }
+
 }
