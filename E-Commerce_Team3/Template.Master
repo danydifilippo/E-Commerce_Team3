@@ -23,7 +23,7 @@
                 <div>
                     <a href="Home.aspx">Home</a>
                     <asp:Label ID="lblError" runat="server" Text="" Visible="false"></asp:Label>
-                    <asp:Repeater ID="Repeater1" runat="server" ItemType="E_Commerce_Team3.Template.Categoria">
+                    <asp:Repeater ID="Repeater1" runat="server" ItemType="E_Commerce_Team3.Classi.Categoria">
                         <ItemTemplate>
                             <a href="SelectByCategory.aspx?IdCategoria=<%# Item.IdCategoria %>"><%# Item.NameCategoria %></a>
                         </ItemTemplate>

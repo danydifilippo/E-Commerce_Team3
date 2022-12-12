@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_Commerce_Team3.Classi;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -50,10 +51,5 @@ namespace E_Commerce_Team3
             }
         }
 
-        public class Categoria
-        {
-            public int IdCategoria { get; set; }
-            public string NameCategoria { get; set; }
-        }
     }
 }

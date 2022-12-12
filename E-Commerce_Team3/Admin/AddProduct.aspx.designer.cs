@@ -7,92 +7,110 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace E_Commerce_Team3
+namespace E_Commerce_Team3.Admin
 {
 
 
-    public partial class Dettagli
+    public partial class AddProduct
     {
 
         /// <summary>
-        /// Controllo IMAGE1.
+        /// Controllo lblAddProd.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image IMAGE1;
+        protected global::System.Web.UI.WebControls.Label lblAddProd;
 
         /// <summary>
-        /// Controllo lbcategoria.
+        /// Controllo lblError.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbcategoria;
+        protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// Controllo lbNomeProdotto.
+        /// Controllo txtNome.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbNomeProdotto;
+        protected global::System.Web.UI.WebControls.TextBox txtNome;
 
         /// <summary>
-        /// Controllo lbSottotitolo.
+        /// Controllo txtSottotitolo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbSottotitolo;
+        protected global::System.Web.UI.WebControls.TextBox txtSottotitolo;
 
         /// <summary>
-        /// Controllo lbDescrizione.
+        /// Controllo txtDescrizione.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbDescrizione;
+        protected global::System.Web.UI.WebControls.TextBox txtDescrizione;
 
         /// <summary>
-        /// Controllo lbPrezzo.
+        /// Controllo FileUpload1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbPrezzo;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
-        /// Controllo lbPrezzoScontato.
+        /// Controllo txtPrezzo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbPrezzoScontato;
+        protected global::System.Web.UI.WebControls.TextBox txtPrezzo;
 
         /// <summary>
-        /// Controllo TextBox1.
+        /// Controllo txtPrScontato.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtPrScontato;
 
         /// <summary>
-        /// Controllo AddToCart.
+        /// Controllo ckbInPromo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddToCart;
+        protected global::System.Web.UI.WebControls.CheckBox ckbInPromo;
+
+        /// <summary>
+        /// Controllo ddlCategoria.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategoria;
+
+        /// <summary>
+        /// Controllo InsertProdotto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button InsertProdotto;
     }
 }
