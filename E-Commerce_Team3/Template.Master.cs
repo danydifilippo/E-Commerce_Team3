@@ -54,10 +54,10 @@ namespace E_Commerce_Team3
             }
             if (Request.Cookies.Count > 0)
             {
-                entra.Visible = false;
+                Enter.Visible = false;
                 lblWelcome.Visible = true;
                 LinkButton1.Visible = true;
-                lblWelcome.Text = $"Ciao {Request.Cookies["Username"]}, bentornato";
+                lblWelcome.Text = $"Ciao {HttpContext.Current.User.Identity.Name}, bentornato";
             }
         }
 
@@ -66,7 +66,7 @@ namespace E_Commerce_Team3
             FormsAuthentication.SignOut();
             Response.Redirect(FormsAuthentication.LoginUrl);
             Request.Cookies.Clear();
-            entra.Visible = true;
+            Enter.Visible = true;
 
         }
     }

@@ -31,7 +31,8 @@
                 </div>
                 <div>
                     <a href="Carrello.aspx" class="navlink"><i class="bi bi-cart"></i>Carrello</a>
-                    <a href="Login.aspx" class="navlink"><i class="bi bi-door-open" runat="server" id="entra" visible="true"></i>Entra</a>
+                    <a href="Login.aspx" class="navlink" runat="server" id="Enter" visible="true"><i class="bi bi-door-open"></i>Entra</a>
+               
                     <asp:Label ID="lblWelcome" runat="server" Text="" Visible="false"></asp:Label>
                     <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Visible="false">Logout</asp:LinkButton>
                     
