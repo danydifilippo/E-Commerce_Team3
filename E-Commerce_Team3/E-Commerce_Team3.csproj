@@ -95,10 +95,10 @@
     <Content Include="img\hightchair.jpg" />
     <Content Include="img\newstyle.jpg" />
     <Content Include="img\poltr.jpg" />
+    <Content Include="img\poltrona.png" />
     <Content Include="img\poltrona1.jpg" />
-    <Content Include="img\poltronaGrigia.png" />
     <Content Include="img\regina.jpg" />
-    <Content Include="img\royalwoodenchair.jpg" />
+    <Content Include="img\chair.jpg" />
     <Content Include="img\sofa-logo.png" />
     <Content Include="img\treech.jpg" />
     <Content Include="img\treechair.jpg" />
