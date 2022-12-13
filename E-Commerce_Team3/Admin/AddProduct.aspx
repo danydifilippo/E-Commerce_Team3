@@ -7,7 +7,7 @@
     <div class="container" id="FormAdd">
 
     <div>
-        <asp:Label ID="lblAddProd" runat="server" Text="" Visible="false"></asp:Label>
+        <asp:Label ID="lblAddProd" runat="server" Text="" Visible="false" ForeColor="ForestGreen" CssClass="text-center"></asp:Label>
         <asp:Label ID="lblError" runat="server" Text="" Visible="false" ForeColor="red"></asp:Label>
     </div>
 

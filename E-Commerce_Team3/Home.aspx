@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><%# Item.NomeProdotto %></h5>
                         <p class="card-text"><%# Item.Prezzo %></p>
-                        <a href="Dettagli.aspx?IdProdotto><%# Item.IdProdotto  %>"><i class="bi bi-eyeglasses"></i> Dettagli</a>
+                        <a href="Dettagli.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-eyeglasses"></i> Dettagli</a>
                     </div>
                 </div>
             </ItemTemplate>

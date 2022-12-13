@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Web;
+using System.Web.Configuration;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -49,7 +52,22 @@ namespace E_Commerce_Team3
                     lblError.Visible=true; lblError.Text=ex.Message;
             }
             }
+            if (Request.Cookies.Count > 0)
+            {
+                entra.Visible = false;
+                lblWelcome.Visible = true;
+                LinkButton1.Visible = true;
+                lblWelcome.Text = $"Ciao {Request.Cookies["Username"]}, bentornato";
+            }
         }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Response.Redirect(FormsAuthentication.LoginUrl);
+            Request.Cookies.Clear();
+            entra.Visible = true;
+
+        }
     }
 }

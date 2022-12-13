@@ -93,11 +93,16 @@
     <Content Include="img\divanoChaiseLong.png" />
     <Content Include="img\divanoNewStylish.jpg" />
     <Content Include="img\hightchair.jpg" />
+    <Content Include="img\newstyle.jpg" />
+    <Content Include="img\poltr.jpg" />
     <Content Include="img\poltrona1.jpg" />
     <Content Include="img\poltronaGrigia.png" />
+    <Content Include="img\regina.jpg" />
     <Content Include="img\royalwoodenchair.jpg" />
     <Content Include="img\sofa-logo.png" />
+    <Content Include="img\treech.jpg" />
     <Content Include="img\treechair.jpg" />
+    <Content Include="img\user.png" />
     <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -184,6 +189,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Admin\Web.config" />
     <None Include="packages.config" />
     <Content Include="Template.Master" />
     <Content Include="Scripts\bootstrap.min.js.map" />
