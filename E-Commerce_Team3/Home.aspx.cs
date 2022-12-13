@@ -38,8 +38,6 @@ namespace E_Commerce_Team3
                         p.Sottotitolo = reader["Sottotitolo"].ToString();
                         p.UrlImmagine = reader["UrlImmagine"].ToString();
                         p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
-                        p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
-                        p.IdCategoria = Convert.ToInt32(reader["IdCategoria"]);
                         listProdotti.Add(p);
 
                     }
@@ -58,4 +56,3 @@ namespace E_Commerce_Team3
         }
     }
     }
-}
