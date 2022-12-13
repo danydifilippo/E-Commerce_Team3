@@ -58,8 +58,8 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="d-flex justify-content-center" >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
             </asp:ContentPlaceHolder>
         </div>
     </form>
