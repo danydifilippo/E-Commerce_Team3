@@ -11,7 +11,15 @@ namespace E_Commerce_Team3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            GridView1.DataSource = Prodotto.Carrello;
+            GridView1.DataBind();
+        }
 
+        protected void SvuotaCestino_Click(object sender, EventArgs e)
+        {
+            Prodotto.Carrello.Clear();
+            GridView1.Visible = false;
+            lblEmptyCart.Text = " <a href=\"Home.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a><hr />";
         }
     }
 }
