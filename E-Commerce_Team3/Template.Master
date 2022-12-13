@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="E_Commerce_Team3.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title>E-Commerce_Team3</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <div>
+                    <img src="/img/sofa-logo.png" width="40" class="img-fluid" />
+                    <h2 class="float-end">SofàMo</h2>
+                </div>
+                <div id="links">
+                    <a href="Home.aspx" class="navlink">Home</a>
+                    <asp:Label ID="lblError" runat="server" Text="" Visible="false" CssClass="navlink"></asp:Label>
+                    <asp:Repeater ID="Repeater1" runat="server" ItemType="E_Commerce_Team3.Classi.Categoria">
+                        <ItemTemplate>
+                            <a class="navlink" href="SelectByCategory.aspx?IdCategoria=<%# Item.IdCategoria %>"><%# Item.NameCategoria %></a>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div id="linkCart">
+                    <a href="Carrello.aspx" class="navlink"><i class="bi bi-cart"></i>Carrello</a>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid" id="CarouselSofa" data-bs-interval="7000">
+                    <div class="float-end slider">
+                        <h2>Latest Sofa Chair</h2>
+                        <p>Guarda le ultime collezioni nella categoria Sofà</p>
+                    </div>
+                </div>
+                <div class="carousel-item container-fluid" id="CarouselDivani" data-bs-interval="7000">
+                    <div class="float-end slider">
+                        <h2>Latest Divani Chair</h2>
+                        <p>Guarda le ultime collezioni nella categoria Divani</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
