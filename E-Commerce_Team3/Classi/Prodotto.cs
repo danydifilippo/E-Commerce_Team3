@@ -7,6 +7,7 @@ namespace E_Commerce_Team3
 {
     public class Prodotto
     {
+        public int IdProdotto { get; set; }
         public string NomeProdotto { get; set; }
         public string Descrizione { get; set; }
         public string Sottotitolo { get; set; }

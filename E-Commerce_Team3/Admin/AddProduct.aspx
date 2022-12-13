@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
    
+    <div class="container" id="FormAdd">
 
     <div>
         <asp:Label ID="lblAddProd" runat="server" Text="" Visible="false"></asp:Label>
@@ -36,5 +37,5 @@
         </asp:DropDownList>
         <asp:Button ID="InsertProdotto" runat="server" Text="Aggiungi prodotto" OnClick="InsertProdotto_Click"/>
     </div>
-        
+     </div>   
 </asp:Content>

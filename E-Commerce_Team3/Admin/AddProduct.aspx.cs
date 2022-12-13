@@ -45,7 +45,20 @@ namespace E_Commerce_Team3.Admin
             }
         }
 
+        private void ClearInputs(ControlCollection ctrls)
+        {
+            foreach (Control ctrl in ctrls)
+            {
+                if (ctrl is TextBox)
+                    ((TextBox)ctrl).Text = string.Empty;
+                else if (ctrl is DropDownList)
+                    ((DropDownList)ctrl).ClearSelection();
+                else if (ctrl is CheckBox) 
+                    ((CheckBox)ctrl).Checked = false;
 
+                ClearInputs(ctrl.Controls);
+            }
+        }
 
         protected void InsertProdotto_Click(object sender, EventArgs e)
         {
@@ -61,13 +74,24 @@ namespace E_Commerce_Team3.Admin
 
                 command.Connection = connection;
 
+            
+
                 command.Parameters.AddWithValue("NomeProdotto", txtNome.Text);
                 command.Parameters.AddWithValue("Descrizione", txtDescrizione.Text);
                 command.Parameters.AddWithValue("Sottotitolo", txtSottotitolo.Text);
                 command.Parameters.AddWithValue("Prezzo", txtPrezzo.Text);
-                command.Parameters.AddWithValue("NomeProdotto", txtPrScontato.Text);
+                command.Parameters.AddWithValue("PrezzoScontato", txtPrScontato.Text);
                 command.Parameters.AddWithValue("IdCategoria", ddlCategoria.SelectedItem.Value);
                 command.Parameters.AddWithValue("UrlImmagine", FileUpload1.FileName);
+                if (ckbInPromo.Checked)
+                {
+                    command.Parameters.AddWithValue("InPromozione", true);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("InPromozione", false);
+                };
+                
 
                 int row = command.ExecuteNonQuery();
                 if (row > 0)
@@ -77,6 +101,8 @@ namespace E_Commerce_Team3.Admin
                 }
 
                 connection.Close();
+
+                ClearInputs(Page.Controls);
 
             }
             catch
