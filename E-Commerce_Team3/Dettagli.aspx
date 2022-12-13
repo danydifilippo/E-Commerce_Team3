@@ -28,7 +28,7 @@
 
             </div>
             <div>
-                <asp:TextBox ID="TextBox1" runat="server" TextMode="Number"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" TextMode="Number" min="1"></asp:TextBox>
 
                 <asp:Button ID="AddToCart" runat="server" Text="Aggiungi al Carrello" OnClick="AddToCart_Click" />
                 <a href="Carrello.aspx">Vai al Carrello</a>

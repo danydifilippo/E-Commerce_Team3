@@ -28,7 +28,7 @@ namespace E_Commerce_Team3
 
                     SqlDataReader reader = command.ExecuteReader();
 
-                    List<Prodotto> listProdotti = new List<Prodotto>();
+                   
 
                     while (reader.Read())
                     {
@@ -38,11 +38,11 @@ namespace E_Commerce_Team3
                         p.Sottotitolo = reader["Sottotitolo"].ToString();
                         p.UrlImmagine = reader["UrlImmagine"].ToString();
                         p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
-                        listProdotti.Add(p);
+                        Prodotto.listProdotti.Add(p);
 
                     }
 
-                    Repeater1.DataSource = listProdotti;
+                    Repeater1.DataSource = Prodotto.listProdotti;
                     Repeater1.DataBind();
 
                     connection.Close();
