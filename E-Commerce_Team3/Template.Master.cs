@@ -39,9 +39,7 @@ namespace E_Commerce_Team3
                         c.IdCategoria = Convert.ToInt32(reader["IdCategoria"]);
                         c.NameCategoria = Convert.ToString(reader["NomeCategoria"]);
                         list.Add(c);
-
                     }
-
                     Repeater1.DataSource= list;
                     Repeater1.DataBind();
 

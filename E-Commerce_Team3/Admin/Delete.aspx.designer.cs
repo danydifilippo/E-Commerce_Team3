@@ -7,30 +7,21 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace E_Commerce_Team3
+namespace E_Commerce_Team3.Admin
 {
 
 
-    public partial class Template
+    public partial class Delete
     {
 
         /// <summary>
-        /// Controllo head.
+        /// Controllo lblDelete.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
-        /// <summary>
-        /// Controllo form1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblDelete;
 
         /// <summary>
         /// Controllo lblError.
@@ -42,57 +33,57 @@ namespace E_Commerce_Team3
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// Controllo Repeater1.
+        /// Controllo Image1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// Controllo Enter.
+        /// Controllo lbNomeProdotto.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Enter;
+        protected global::System.Web.UI.WebControls.Label lbNomeProdotto;
 
         /// <summary>
-        /// Controllo lblWelcome.
+        /// Controllo lbSottotitolo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWelcome;
+        protected global::System.Web.UI.WebControls.Label lbSottotitolo;
 
         /// <summary>
-        /// Controllo LinkButton1.
+        /// Controllo lblDescrizione.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.Label lblDescrizione;
 
         /// <summary>
-        /// Controllo carouselExampleControls.
+        /// Controllo return.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl carouselExampleControls;
+        protected global::System.Web.UI.WebControls.Button @return;
 
         /// <summary>
-        /// Controllo ContentPlaceHolder1.
+        /// Controllo Delete.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button Delete;
     }
 }

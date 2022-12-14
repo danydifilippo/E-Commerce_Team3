@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\AggiungiProdotto.aspx" />
-    <Content Include="Admin\Magazzino.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\Delete.aspx" />
+    <Content Include="Admin\Magazzino_.aspx" />
+    <Content Include="Admin\Update.aspx" />
     <Content Include="Carrello.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -124,19 +126,40 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AggiungiProdotto.aspx.cs">
-      <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AggiungiProdotto.aspx.designer.cs">
-      <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Magazzino.aspx.cs">
-      <DependentUpon>Magazzino.aspx</DependentUpon>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Magazzino.aspx.designer.cs">
-      <DependentUpon>Magazzino.aspx</DependentUpon>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Magazzino_.aspx.cs">
+      <DependentUpon>Magazzino_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Magazzino_.aspx.designer.cs">
+      <DependentUpon>Magazzino_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
     </Compile>
     <Compile Include="Carrello.aspx.cs">
       <DependentUpon>Carrello.aspx</DependentUpon>
@@ -207,6 +230,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Admin\Web.config" />
+    <Content Include="Admin\Admin.Master" />
     <None Include="packages.config" />
     <Content Include="Template.Master" />
     <Content Include="Scripts\bootstrap.min.js.map" />

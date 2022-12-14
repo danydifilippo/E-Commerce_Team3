@@ -17,7 +17,7 @@
         <nav class="navbar bg-light">
             <div class="container">
                 <div>
-                    <img src="/img/sofa-logo.png" width="40" class="img-fluid" />
+                    <img src="/img/logo_divani.png" width="40" class="img-fluid" />
                     <h2 class="float-end">SofàMo</h2>
                 </div>
                 <div id="links">

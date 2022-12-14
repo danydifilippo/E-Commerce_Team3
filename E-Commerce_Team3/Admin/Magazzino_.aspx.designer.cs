@@ -11,7 +11,16 @@ namespace E_Commerce_Team3.Admin
 {
 
 
-    public partial class Magazzino
+    public partial class Magazzino_
     {
+
+        /// <summary>
+        /// Controllo GridView1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

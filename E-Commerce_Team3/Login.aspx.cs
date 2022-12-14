@@ -38,8 +38,13 @@ namespace E_Commerce_Team3
             {
                if (user == reader["Username"].ToString() && password == reader["Password_"].ToString())
                 {
+
                     FormsAuthentication.SetAuthCookie(user, false);
-                    Response.Redirect(FormsAuthentication.DefaultUrl);
+
+                   
+                    if (user == "admin")
+                    { Response.Redirect("/Admin/Magazzino_.aspx"); }
+                    else { Response.Redirect(FormsAuthentication.DefaultUrl); }
                 }
                else
                 {

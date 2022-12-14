@@ -5,13 +5,12 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
-using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace E_Commerce_Team3.Admin
 {
-    public partial class AggiungiProdotto : System.Web.UI.Page
+    public partial class AddProduct1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -103,7 +102,6 @@ namespace E_Commerce_Team3.Admin
                 connection.Close();
 
                 ClearInputs(Page.Controls);
-
             }
             catch
             {
@@ -113,22 +111,7 @@ namespace E_Commerce_Team3.Admin
 
 
             }
-            if (Request.Cookies.Count > 0)
-            {
-                Enter.Visible = false;
-                lblWelcome.Visible = true;
-                LinkButton1.Visible = true;
-                lblWelcome.Text = $"Ciao {HttpContext.Current.User.Identity.Name}, bentornato";
-            }
-        }
-
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-                FormsAuthentication.SignOut();
-                Response.Redirect(FormsAuthentication.LoginUrl);
-                Request.Cookies.Clear();
-                Enter.Visible = true;
 
         }
     }
-}
+    }

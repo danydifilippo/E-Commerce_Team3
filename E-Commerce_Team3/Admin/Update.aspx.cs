@@ -7,9 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace E_Commerce_Team3.Admin
 {
-    public partial class Magazzino : System.Web.UI.Page
+    public partial class Update : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void InsertProdotto_Click(object sender, EventArgs e)
         {
 
         }
