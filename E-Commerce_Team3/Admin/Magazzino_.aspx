@@ -5,7 +5,7 @@
 
     
            <div class="mx-5">
-               <asp:GridView ID="GridView1" Vert runat="server" ItemType="E_Commerce_Team3.Prodotto" CssClass="table table-bordered" AutoGenerateColumns="false">
+               <asp:GridView ID="GridView1" runat="server" ItemType="E_Commerce_Team3.Prodotto" CssClass="table table-bordered" AutoGenerateColumns="false">
                    
                    <Columns>
                        <asp:TemplateField HeaderText="ID">

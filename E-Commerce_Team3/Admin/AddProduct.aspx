@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container" id="FormAdd">
+     <div class="container-fluid" id="FormAdd">
                         <div>
                             <asp:Label ID="lblAddProd" runat="server" Text="" Visible="false" ForeColor="ForestGreen" CssClass="text-center"></asp:Label>
                             <asp:Label ID="lblError" runat="server" Text="" Visible="false" ForeColor="red"></asp:Label>
@@ -31,8 +31,10 @@
 
                             <p>Prezzo scontato:</p>
                             <asp:TextBox ID="txtPrScontato" runat="server" TextMode="Number"></asp:TextBox>
+
                             <p>In Promozione:</p>
                             <asp:CheckBox ID="ckbInPromo" runat="server" />
+
                             <p>Categoria:</p>
                             <asp:DropDownList ID="ddlCategoria" runat="server">
                             </asp:DropDownList>

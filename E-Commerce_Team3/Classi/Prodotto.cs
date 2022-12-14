@@ -81,12 +81,8 @@ namespace E_Commerce_Team3
             connection.Open();
 
             SqlCommand command = new SqlCommand();
-            command.CommandType = System.Data.CommandType.StoredProcedure;
-            command.CommandText = "SelectByIdProdotto";
+            command.CommandText = "SELECT * FROM PRODOTTO FULL JOIN CATEGORIA ON CATEGORIA.IDCATEGORIA = PRODOTTO.IDCATEGORIA WHERE IdProdotto=id";
             command.Connection = connection;
-
-            command.Parameters.AddWithValue("IdProdotto", id);
-
 
             SqlDataReader reader = command.ExecuteReader();
 
@@ -101,6 +97,7 @@ namespace E_Commerce_Team3
                 p.UrlImmagine = reader["UrlImmagine"].ToString();
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
                 p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
+                p.NomeCategoria = reader["NomeCategoria"].ToString();
             }
 
             connection.Close();
