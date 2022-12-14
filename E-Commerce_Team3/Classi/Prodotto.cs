@@ -24,6 +24,9 @@ namespace E_Commerce_Team3
         public int IdCategoria { get; set; }
         public int Quantita { get; set; }
 
+        public string LogoInPromo { get; set; }
+        public string PrezzoInPromo {get; set; }
+
         public double TotCarrello { get; set; }
 
         public static List<Prodotto> GetAllProdotti()
@@ -82,6 +85,7 @@ namespace E_Commerce_Team3
                 p.IdProdotto = Convert.ToInt32(reader["IdProdotto"]);
                 p.NomeProdotto = reader["NomeProdotto"].ToString();
                 p.Sottotitolo = reader["Sottotitolo"].ToString();
+                p.Descrizione = reader["Descrizione"].ToString();
                 p.UrlImmagine = reader["UrlImmagine"].ToString();
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
             }

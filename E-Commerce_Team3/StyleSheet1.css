@@ -40,7 +40,7 @@
 
     .navlink:hover {
         text-decoration: underline;
-        text-decoration-color: Cadetblue;
+        text-decoration-color: #2c7f97;
     }
 
 #links {
@@ -71,5 +71,44 @@
     border: none;
     padding:0.6em;
     border-radius: 1cm
+}
+
+#ContentPlaceHolder1_AddToCart {
+    --bs-btn-border-color: #2c7f97;
+    --bs-btn-hover-bg: #2c7f97;
+    --bs-btn-hover-color: white;
+    --bs-btn-color: #2c7f97;
+    --bs-btn-hover-border-color: #2c7f97;
+    margin-left: 10px;
+}
+
+#ContentPlaceHolder1_TextBox1 {
+    max-width: 50px;
+}
+
+
+.btn-outline-secondary {
+    --bs-btn-border-color: #9f709c;
+    --bs-btn-hover-bg: #9f709c;
+    --bs-btn-hover-color: white;
+    --bs-btn-color: #9f709c;
+    --bs-btn-hover-border-color: #9f709c;
+    margin-left: 10px;
+}
+
+#ContentPlaceHolder1_IMAGE1{
+    margin-top:7px;
+    margin-left: 6px
+}
+
+#foto {
+    position: relative
+}
+
+#logoinpromo {
+    position:absolute;
+    width:10px;
+    top:0;
+    right:0
 }
 

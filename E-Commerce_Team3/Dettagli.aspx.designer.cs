@@ -24,15 +24,6 @@ namespace E_Commerce_Team3
         protected global::System.Web.UI.WebControls.Image IMAGE1;
 
         /// <summary>
-        /// Controllo lbcategoria.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbcategoria;
-
-        /// <summary>
         /// Controllo lbNomeProdotto.
         /// </summary>
         /// <remarks>
@@ -51,13 +42,13 @@ namespace E_Commerce_Team3
         protected global::System.Web.UI.WebControls.Label lbSottotitolo;
 
         /// <summary>
-        /// Controllo lbDescrizione.
+        /// Controllo lblDescrizione.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbDescrizione;
+        protected global::System.Web.UI.WebControls.Label lblDescrizione;
 
         /// <summary>
         /// Controllo lbPrezzo.

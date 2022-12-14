@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\AggiungiProdotto.aspx" />
+    <Content Include="Admin\Magazzino.aspx" />
     <Content Include="Carrello.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -88,18 +89,26 @@
     <Content Include="Dettagli.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
-    <Content Include="img\divano2.png" />
     <Content Include="img\divano3.png" />
     <Content Include="img\divanoChaiseLong.png" />
+    <Content Include="img\divanog.png" />
     <Content Include="img\divanoNewStylish.jpg" />
     <Content Include="img\hightchair.jpg" />
+    <Content Include="img\linea.png" />
+    <Content Include="img\logo_divani.png" />
     <Content Include="img\newstyle.jpg" />
     <Content Include="img\poltr.jpg" />
-    <Content Include="img\poltrona.png" />
     <Content Include="img\poltrona1.jpg" />
     <Content Include="img\regina.jpg" />
     <Content Include="img\chair.jpg" />
+    <Content Include="img\sedia.jpg" />
+    <Content Include="img\sedia2.jpg" />
+    <Content Include="img\sedia3.jpg" />
+    <Content Include="img\sedia4.jpg" />
     <Content Include="img\sofa-logo.png" />
+    <Content Include="img\sofa2.jpg" />
+    <Content Include="img\sofagrey.jpg" />
+    <Content Include="img\sp_offer.png" />
     <Content Include="img\treech.jpg" />
     <Content Include="img\treechair.jpg" />
     <Content Include="img\user.png" />
@@ -115,12 +124,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AddProduct.aspx.cs">
-      <DependentUpon>AddProduct.aspx</DependentUpon>
+    <Compile Include="Admin\AggiungiProdotto.aspx.cs">
+      <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddProduct.aspx.designer.cs">
-      <DependentUpon>AddProduct.aspx</DependentUpon>
+    <Compile Include="Admin\AggiungiProdotto.aspx.designer.cs">
+      <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Magazzino.aspx.cs">
+      <DependentUpon>Magazzino.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Magazzino.aspx.designer.cs">
+      <DependentUpon>Magazzino.aspx</DependentUpon>
     </Compile>
     <Compile Include="Carrello.aspx.cs">
       <DependentUpon>Carrello.aspx</DependentUpon>

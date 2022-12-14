@@ -15,11 +15,10 @@ namespace E_Commerce_Team3
 
            Prodotto p =  Prodotto.GetProdotto(id);
                
-                    IMAGE1.ImageUrl = p.UrlImmagine;
-                    lbcategoria.Text = p.IdCategoria.ToString();
+                    IMAGE1.ImageUrl = $"img/{p.UrlImmagine}";
                     lbNomeProdotto.Text = p.NomeProdotto;
                     lbSottotitolo.Text = p.Sottotitolo;
-                    lbDescrizione.Text = p.Descrizione;
+                    lblDescrizione.Text = p.Descrizione;
                     lbPrezzo.Text = p.Prezzo.ToString("c2");
                     lbPrezzoScontato.Text = p.PrezzoScontato.ToString("c2");
 

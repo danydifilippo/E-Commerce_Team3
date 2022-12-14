@@ -13,7 +13,10 @@ namespace E_Commerce_Team3
     public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+
         {
+            Prodotto.listProdotti.Clear();
+
             if (!IsPostBack)
             {
                 try
@@ -28,7 +31,7 @@ namespace E_Commerce_Team3
 
                     SqlDataReader reader = command.ExecuteReader();
 
-                   
+                    
 
                     while (reader.Read())
                     {
@@ -38,8 +41,22 @@ namespace E_Commerce_Team3
                         p.Sottotitolo = reader["Sottotitolo"].ToString();
                         p.UrlImmagine = reader["UrlImmagine"].ToString();
                         p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
+                        p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
+                        p.PrezzoInPromo = "Prezzo in Promo a: ";
+                        if (p.PrezzoScontato > 0)
+                        {
+                            p.InPromozione = true;
+                            p.LogoInPromo = "img/sp_offer.png";
+                            
+                            
+                        }
+                        else
+                        {
+                            p.InPromozione = false;
+                            p.LogoInPromo = "";
+                        }
                         Prodotto.listProdotti.Add(p);
-
+                        
                     }
 
                     Repeater1.DataSource = Prodotto.listProdotti;
@@ -52,6 +69,7 @@ namespace E_Commerce_Team3
                 {
                     lblError.Visible = true; lblError.Text = ex.Message;
                 }
+
             }
         }
     }

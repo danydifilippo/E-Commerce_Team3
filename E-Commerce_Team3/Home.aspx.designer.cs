@@ -24,6 +24,15 @@ namespace E_Commerce_Team3
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
+        /// Controllo lblInPromo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInPromo;
+
+        /// <summary>
         /// Controllo Repeater1.
         /// </summary>
         /// <remarks>
