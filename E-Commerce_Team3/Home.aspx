@@ -19,7 +19,7 @@
                         <h5 class="card-title"><%# Item.NomeProdotto %></h5>
                         <h6 class="card-title text-secondary"><%# Item.Sottotitolo %></h6>
                         <p class="card-text mt-2" id="PrBarrato" runat="server">Prezzo: <strong><%# Item.Prezzo.ToString("c2") %></strong></p>
-                        <p class="card-text mt-2"<%# Item.PrezzoInPromo %><strong><%# Item.PrezzoScontato.ToString("c2") %></strong></p>
+                        <p class="card-text mt-2"><%# Item.PrezzoInPromo %><strong><%# Item.PrezzoScontato.ToString("c2") %></strong></p>
                         <a href="Dettagli.aspx?IdProdotto=<%# Item.IdProdotto  %>" class="link-secondary text-decoration-none" ><i class="bi bi-eyeglasses"></i> Dettagli</a>
                     </div>
                 </div>

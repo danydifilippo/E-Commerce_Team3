@@ -14,6 +14,11 @@ namespace E_Commerce_Team3
             string id = Request.QueryString["IdCategoria"];
 
 
+            Repeater1.DataSource = Prodotto.GetProdottiIdCategoria(id);
+            Repeater1.DataBind();
+
+
+
         }
     }
 

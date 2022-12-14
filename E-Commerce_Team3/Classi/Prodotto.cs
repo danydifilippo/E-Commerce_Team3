@@ -96,6 +96,57 @@ namespace E_Commerce_Team3
 
         }
 
+        public static List<Prodotto> GetProdottiIdCategoria(string id)
+        {
+
+            List<Prodotto> lProdotti = new List<Prodotto>();
+
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ECommerce"].ToString();
+            connection.Open();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = "SelectByIdCategoria";
+            command.Connection = connection;
+
+            command.Parameters.AddWithValue("IdCategoria", id);
+
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Prodotto p = new Prodotto();
+                p.IdProdotto = Convert.ToInt32(reader["IdProdotto"]);
+                p.IdCategoria = Convert.ToInt32(reader["IdCategoria"]);
+                p.NomeProdotto = reader["NomeProdotto"].ToString();
+                p.Sottotitolo = reader["Sottotitolo"].ToString();
+                p.UrlImmagine = reader["UrlImmagine"].ToString();
+                p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
+                p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
+                p.PrezzoInPromo = "Prezzo in Promo a: ";
+                if (p.PrezzoScontato > 0)
+                {
+                    p.InPromozione = true;
+                    p.LogoInPromo = "img/sp_offer.png";
+
+
+                }
+                else
+                {
+                    p.InPromozione = false;
+                    p.LogoInPromo = "";
+                }
+                lProdotti.Add(p);
+            }
+
+            connection.Close();
+            return lProdotti;
+
+
+        }
+
     }
 
     }
