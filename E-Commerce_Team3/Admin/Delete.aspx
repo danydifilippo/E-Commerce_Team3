@@ -22,7 +22,7 @@
                         <div>
                            <asp:Button ID="return" runat="server" Text="Torna al magazzino" OnClick="return_Click"
                              CssClass="btn btn-outline-primary"/>
-                       <asp:Button ID="Delete" runat="server" Text="Elimina Articolo" OnClick="Delete_Click"
+                       <asp:Button ID="DeleteArticle" runat="server" Text="Elimina Articolo" OnClick="Delete_Click"
                              CssClass="btn btn-outline-secondary"/>
      
                          

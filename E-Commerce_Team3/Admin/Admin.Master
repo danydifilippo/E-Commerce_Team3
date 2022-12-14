@@ -26,17 +26,17 @@
                        
 
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Magazzino Prodotti
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul  class="btn btn-outline-primary dropdown-menu">
                                 <li><a class="dropdown-item navlink" href="Magazzino.aspx">Lista Prodotti</a></li>
                                 <li><a class="dropdown-item navlink" href="AddProduct.aspx">Aggiungi Prodotto</a></li>
                                 <li><a class="dropdown-item navlink">
                             </ul>
                         </div>
-                         <button type="button" class="btn btn-primary"><a href="Home.aspx" class="navlink">Home</a></button>
-                         <asp:LinkButton ID="LinkButton1" runat="server" Visible="false"  CssClass="btn btn-primary" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                         <button type="button" class="btn btn-outline-primary"><a href="Home.aspx" class="navlink">Home</a></button>
+                         <asp:LinkButton ID="LinkButton1" runat="server" Visible="false"  CssClass="btn btn-outline-primary" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
                         
                     </div>
                     
