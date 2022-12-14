@@ -10,7 +10,7 @@
             <Columns>
                 <asp:TemplateField HeaderText="Foto" ItemStyle-CssClass="w-25">
                     <ItemTemplate>
-                        <img src="<%# Item.UrlImmagine %>" class="card-img-top" width="12.5" alt="Foto_Prodotto">
+                        <img src="<%# Item.UrlImmagine %>" class="card-img-top" alt="Foto_Prodotto">
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Prodotto">
