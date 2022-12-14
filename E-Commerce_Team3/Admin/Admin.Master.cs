@@ -16,7 +16,7 @@ namespace E_Commerce_Team3.Admin
             {
                 Enter.Visible = false;
                 lblWelcome.Visible = true;
-           
+                LinkButton1.Visible = true;
                 lblWelcome.Text = $"Ciao {HttpContext.Current.User.Identity.Name}, bentornato";
             }
         }

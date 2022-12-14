@@ -42,6 +42,15 @@ namespace E_Commerce_Team3.Admin
         protected global::System.Web.UI.WebControls.Label lblWelcome;
 
         /// <summary>
+        /// Controllo LinkButton1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+
+        /// <summary>
         /// Controllo Enter.
         /// </summary>
         /// <remarks>
