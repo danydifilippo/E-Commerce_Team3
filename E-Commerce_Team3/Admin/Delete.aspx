@@ -21,9 +21,9 @@
                         <hr />
                         <div>
                            <asp:Button ID="return" runat="server" Text="Torna al magazzino" OnClick="return_Click"
-                             class="btn btn-outline-primary"/>
+                             CssClass="btn btn-outline-primary"/>
                        <asp:Button ID="Delete" runat="server" Text="Elimina Articolo" OnClick="Delete_Click"
-                             class="btn btn-outline-secondary"/>
+                             CssClass="btn btn-outline-secondary"/>
      
                          
                         </div>
