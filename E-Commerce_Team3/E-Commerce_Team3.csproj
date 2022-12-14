@@ -147,7 +147,6 @@
     </Compile>
     <Compile Include="Classi\Categoria.cs" />
     <Compile Include="Classi\DbConnection.cs" />
-    <Compile Include="Classi\Request.cs" />
     <Compile Include="Dettagli.aspx.cs">
       <DependentUpon>Dettagli.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

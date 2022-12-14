@@ -34,6 +34,7 @@ namespace E_Commerce_Team3
             Prodotto p = Prodotto.GetProdotto(id);
 
             p.Quantita = Convert.ToInt32(TextBox1.Text);
+            p.UrlImmagine = $"img/{IMAGE1.ImageUrl}";
             p.Prezzo = p.Prezzo * p.Quantita;
 
             p.TotCarrello += p.Prezzo;

@@ -112,3 +112,21 @@
     right:0
 }
 
+.table-condensed tr th {
+    border: 0px solid #E3E9E1;
+    color: #86A8AA;
+    background-color: #E3E9E1;
+}
+
+.table-condensed, .table-condensed tr td {
+    border: 0px solid #000;
+}
+
+tr:nth-child(even) {
+    background: #f8f7ff
+}
+
+tr:nth-child(odd) {
+    background: #fff;
+}
+
