@@ -21,7 +21,10 @@ namespace E_Commerce_Team3
                     lblDescrizione.Text = p.Descrizione;
                     lbPrezzo.Text = p.Prezzo.ToString("c2");
                     lbPrezzoScontato.Text = p.PrezzoScontato.ToString("c2");
-
+                    if (p.PrezzoScontato > 0)
+            {
+                lbPrezzoScontato.Visible = true;
+            }
         }
 
        
@@ -34,9 +37,18 @@ namespace E_Commerce_Team3
             Prodotto p = Prodotto.GetProdotto(id);
 
             p.Quantita = Convert.ToInt32(TextBox1.Text);
+            p.UrlImmagine = IMAGE1.ImageUrl;
             p.Prezzo = p.Prezzo * p.Quantita;
+            p.PrezzoScontato = p.PrezzoScontato * p.Quantita;
+            if(p.PrezzoScontato > 0)
+            {
+                p.TotCarrello = p.PrezzoScontato;
+            }
+            else
+            {
+            p.TotCarrello = p.Prezzo;
+            }
 
-            p.TotCarrello += p.Prezzo;
             Prodotto.Carrello.Add(p);
         }
     }
