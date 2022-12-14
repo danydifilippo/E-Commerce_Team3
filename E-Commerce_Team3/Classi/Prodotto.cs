@@ -88,6 +88,7 @@ namespace E_Commerce_Team3
                 p.Descrizione = reader["Descrizione"].ToString();
                 p.UrlImmagine = reader["UrlImmagine"].ToString();
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
+                p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
             }
 
             connection.Close();
