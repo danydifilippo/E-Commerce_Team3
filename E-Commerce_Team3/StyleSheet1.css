@@ -130,3 +130,10 @@ tr:nth-child(odd) {
     background: #fff;
 }
 
+tbody:first-child td {
+    width: 5% !important;
+}
+
+/*td {
+    -webkit-user-modify: read-write-plaintext-only;
+}*/

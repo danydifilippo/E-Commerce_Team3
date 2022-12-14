@@ -5,12 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label ID="lblEmptyCart" runat="server" Text=""></asp:Label>
     <div class="d-flex flex-column">
-        <asp:GridView ID="GridView1" runat="server" ItemType="E_Commerce_Team3.Prodotto" Visible="true" AutoGenerateColumns="false" CssClass="table table-condensed table-hover w-100 mt-5">
+        <asp:GridView ID="GridView1" RowStyle-VerticalAlign="Middle"  runat="server" ItemType="E_Commerce_Team3.Prodotto" Visible="true" AutoGenerateColumns="false" CssClass="table table-condensed table-hover w-100 mt-5">
 
             <Columns>
                 <asp:TemplateField HeaderText="Foto" ItemStyle-CssClass="w-25">
                     <ItemTemplate>
-                        <img src="<%# Item.UrlImmagine %>" class="card-img-top " alt="Foto_Prodotto">
+                        <img src="<%# Item.UrlImmagine %>" class="card-img-top" width="12.5" alt="Foto_Prodotto">
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Prodotto">
