@@ -21,8 +21,8 @@ namespace E_Commerce_Team3.Admin
             txtNome.Text = p.NomeProdotto;
             txtSottotitolo.Text = p.Sottotitolo;
             txtDescrizione.Text = p.Descrizione;
-            txtPrezzo.Text = Convert.ToDouble(p.Prezzo).ToString("c2");
-            txtPrScontato.Text = Convert.ToDouble(p.PrezzoScontato).ToString("c2");
+            txtPrezzo.Text = p.Prezzo.ToString();
+            txtPrScontato.Text = p.PrezzoScontato.ToString();
             
 
             if (p.InPromozione)

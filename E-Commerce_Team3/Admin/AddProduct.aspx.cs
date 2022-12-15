@@ -113,5 +113,10 @@ namespace E_Commerce_Team3.Admin
             }
 
         }
+
+        protected void Annulla_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Magazzino.aspx");
+        }
     }
     }
