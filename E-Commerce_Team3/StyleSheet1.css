@@ -1,6 +1,7 @@
 ﻿body {
-    width:100vw;
-    height:100vh
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 .container {
@@ -39,9 +40,96 @@
 
     .navlink:hover {
         text-decoration: underline;
-        text-decoration-color: Cadetblue;
+        text-decoration-color: #2c7f97;
     }
 
 #links {
     justify-content:center
+}
+
+.login {
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(227, 233, 225, 0.87);
+    width: 300px;
+    margin-top: 7em;
+    padding: 2em;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 38%;
+}
+
+#imgLogin {
+    width: 80px;
+    border-radius: 20cm;
+}
+
+.inputLogin {
+    margin: 10px;
+    background-color: lightgray;
+    border: none;
+    padding:0.6em;
+    border-radius: 1cm
+}
+
+#ContentPlaceHolder1_AddToCart {
+    --bs-btn-border-color: #2c7f97;
+    --bs-btn-hover-bg: #2c7f97;
+    --bs-btn-hover-color: white;
+    --bs-btn-color: #2c7f97;
+    --bs-btn-hover-border-color: #2c7f97;
+    margin-left: 10px;
+}
+
+#ContentPlaceHolder1_TextBox1 {
+    max-width: 50px;
+}
+
+
+.btn-outline-secondary {
+    --bs-btn-border-color: #9f709c;
+    --bs-btn-hover-bg: #9f709c;
+    --bs-btn-hover-color: white;
+    --bs-btn-color: #9f709c;
+    --bs-btn-hover-border-color: #9f709c;
+    margin-left: 10px;
+}
+
+#ContentPlaceHolder1_IMAGE1{
+    margin-top:7px;
+    margin-left: 6px
+}
+
+#foto {
+    position: relative
+}
+
+#logoinpromo {
+    position:absolute;
+    width:10px;
+    top:0;
+    right:0
+}
+
+.table-condensed tr th {
+    border: 0px solid #E3E9E1;
+    color: #86A8AA;
+    background-color: #E3E9E1;
+}
+
+.table-condensed, .table-condensed tr td {
+    border: 0px solid #000;
+}
+
+tr:nth-child(even) {
+    background: #f8f7ff
+}
+
+tr:nth-child(odd) {
+    background: #fff;
+}
+
+tbody:first-child td {
+    width: 5% !important;
 }

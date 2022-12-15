@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="E_Commerce_Team3.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+                <nav class="navbar bg-light">
+            <div class="container-fluid mx-5">
+                <div>
+                    <img src="/img/sofa-logo.png" width="40" class="img-fluid" />
+                    <h2 class="float-end">SofàMo</h2>
+                </div>
+         
+                    <asp:Label ID="lblWelcome" runat="server" Text="" Visible="false"></asp:Label>
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                       
+
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Magazzino Prodotti
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item navlink" href="Magazzino.aspx">Lista Prodotti</a></li>
+                                <li><a class="dropdown-item navlink" href="AddProduct.aspx">Aggiungi Prodotto</a></li>
+                                <li><a class="dropdown-item navlink">
+                            </ul>
+                        </div>
+                         <button type="button" class="btn btn-primary"><a href="Home.aspx" class="navlink">Home</a></button>
+                         <asp:LinkButton ID="LinkButton1" runat="server" Visible="false"  CssClass="btn btn-primary" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                        
+                    </div>
+                    
+                    <a href="Login.aspx" class="navlink" runat="server" id="Enter" visible="true"><i class="bi bi-door-open"></i>Entra</a>
+
+
+
+                </div>
+
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

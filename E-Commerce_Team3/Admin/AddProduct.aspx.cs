@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_Commerce_Team3.Classi;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -6,12 +7,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using static E_Commerce_Team3.Template;
-using E_Commerce_Team3.Classi;
 
 namespace E_Commerce_Team3.Admin
 {
-    public partial class AddProduct : System.Web.UI.Page
+    public partial class AddProduct1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,8 +24,8 @@ namespace E_Commerce_Team3.Admin
                 command.CommandText = "SELECT * FROM CATEGORIA";
                 command.Connection = connection;
 
-                SqlDataReader reader = command.ExecuteReader();   
-                
+                SqlDataReader reader = command.ExecuteReader();
+
 
 
                 while (reader.Read())
@@ -53,7 +52,7 @@ namespace E_Commerce_Team3.Admin
                     ((TextBox)ctrl).Text = string.Empty;
                 else if (ctrl is DropDownList)
                     ((DropDownList)ctrl).ClearSelection();
-                else if (ctrl is CheckBox) 
+                else if (ctrl is CheckBox)
                     ((CheckBox)ctrl).Checked = false;
 
                 ClearInputs(ctrl.Controls);
@@ -74,7 +73,7 @@ namespace E_Commerce_Team3.Admin
 
                 command.Connection = connection;
 
-            
+
 
                 command.Parameters.AddWithValue("NomeProdotto", txtNome.Text);
                 command.Parameters.AddWithValue("Descrizione", txtDescrizione.Text);
@@ -91,7 +90,7 @@ namespace E_Commerce_Team3.Admin
                 {
                     command.Parameters.AddWithValue("InPromozione", false);
                 };
-                
+
 
                 int row = command.ExecuteNonQuery();
                 if (row > 0)
@@ -103,7 +102,6 @@ namespace E_Commerce_Team3.Admin
                 connection.Close();
 
                 ClearInputs(Page.Controls);
-
             }
             catch
             {
@@ -113,7 +111,7 @@ namespace E_Commerce_Team3.Admin
 
 
             }
+
         }
     }
-}
-
+    }

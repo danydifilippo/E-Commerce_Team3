@@ -11,7 +11,7 @@ namespace E_Commerce_Team3.Admin
 {
 
 
-    public partial class AddProduct
+    public partial class AddProduct1
     {
 
         /// <summary>

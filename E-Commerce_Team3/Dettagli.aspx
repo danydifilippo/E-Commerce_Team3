@@ -3,38 +3,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="row container-fluid">
-
-         <div class="col-4">
-            <div class="text-center">
-                <ASP:IMAGE ID="IMAGE1" runat="server" CssClass="rounded img-fluid" />
+   
+    <div class="container m-5">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 mt-2">
+                    <ASP:IMAGE ID="IMAGE1" runat="server" CssClass="rounded img-fluid w-100" />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="card-title"><asp:Label ID="lbNomeProdotto" runat="server" Font-Bold="true"></asp:Label></h4>
+                        <h5 class="card-text text-secondary"><asp:Label ID="lbSottotitolo" runat="server"></asp:Label></h5>
+                        <p class="card-text"><asp:Label ID="lblDescrizione" runat="server" Font-Size="10"></asp:Label></p>
+                        <hr />
+                        <p> Prezzo: <asp:Label ID="lbPrezzo" runat="server" Font-Bold="true"></asp:Label></p>
+                        <p class="text-secondary text-uppercase"><b> Prezzo in promozione: <asp:Label ID="lbPrezzoScontato" runat="server" Visible="false"></asp:Label> ! </b></p>
+                        <hr />
+                        <div>
+                        <asp:TextBox ID="TextBox1" runat="server" TextMode="Number" min="1"></asp:TextBox>
+                         <asp:Button ID="AddToCart" runat="server" Text="Aggiungi al Carrello" OnClick="AddToCart_Click"
+                             class="btn btn-outline-primary"/>
+                            <asp:LinkButton class="btn btn-outline-secondary" ID="LinkButton1" runat="server" PostBackUrl="~/Carrello.aspx">Vai al Carrello</asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-        <div class="col">
-
-            <div>
-                <asp:Label ID="lbcategoria" runat="server" Font-Size="X-Small"></asp:Label>
-                <asp:Label ID="lbNomeProdotto" runat="server" Font-Size="Larger" Font-Bold="true"></asp:Label>
-                <asp:Label ID="lbSottotitolo" runat="server" Font-Size="Small"></asp:Label>
-            </div>
-            <div>
-                <asp:Label ID="lbDescrizione" runat="server"></asp:Label>
-            </div>
-
-            <div>
-                <asp:Label ID="lbPrezzo" runat="server"></asp:Label>
-                <asp:Label ID="lbPrezzoScontato" runat="server" Visible="false"></asp:Label>
-
-            </div>
-            <div>
-                <asp:TextBox ID="TextBox1" runat="server" TextMode="Number"></asp:TextBox>
-
-                <asp:Button ID="AddToCart" runat="server" Text="Aggiungi al Carrello" OnClick="AddToCart_Click" />
-                <a href="Carrello.aspx">Vai al Carrello</a>
-            </div>
-
-        </div>
-
     </div>
 </asp:Content>

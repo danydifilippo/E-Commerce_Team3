@@ -17,7 +17,7 @@
         <nav class="navbar bg-light">
             <div class="container">
                 <div>
-                    <img src="/img/sofa-logo.png" width="40" class="img-fluid" />
+                    <img src="/img/logo_divani.png" width="40" class="img-fluid" />
                     <h2 class="float-end">SofàMo</h2>
                 </div>
                 <div id="links">
@@ -29,12 +29,17 @@
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-                <div id="linkCart">
+                <div>
                     <a href="Carrello.aspx" class="navlink"><i class="bi bi-cart"></i>Carrello</a>
+                    <a href="Login.aspx" class="navlink" runat="server" id="Enter" visible="true"><i class="bi bi-door-open"></i>Entra</a>
+               
+                    <asp:Label ID="lblWelcome" runat="server" Text="" Visible="false"></asp:Label>
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Visible="false">Logout</asp:LinkButton>
+                    
                 </div>
             </div>
         </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" runat="server" visible="true">
             <div class="carousel-inner">
                 <div class="carousel-item active container-fluid" id="CarouselSofa" data-bs-interval="7000">
                     <div class="float-end slider">

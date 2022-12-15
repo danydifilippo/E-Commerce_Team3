@@ -11,17 +11,45 @@ namespace E_Commerce_Team3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string id = Request.QueryString["idProdotto"];
 
+           Prodotto p =  Prodotto.GetProdotto(id);
+               
+                    IMAGE1.ImageUrl = $"img/{p.UrlImmagine}";
+                    lbNomeProdotto.Text = p.NomeProdotto;
+                    lbSottotitolo.Text = p.Sottotitolo;
+                    lblDescrizione.Text = p.Descrizione;
+                    lbPrezzo.Text = p.Prezzo.ToString("c2");
+                    lbPrezzoScontato.Text = p.PrezzoScontato.ToString("c2");
+                    if (p.PrezzoScontato > 0)
+            {
+                lbPrezzoScontato.Visible = true;
+            }
         }
 
-        protected void Unnamed_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         protected void AddToCart_Click(object sender, EventArgs e)
         {
 
+            string id = Request.QueryString["idProdotto"];
+
+            Prodotto p = Prodotto.GetProdotto(id);
+
+            p.Quantita = Convert.ToInt32(TextBox1.Text);
+            p.UrlImmagine = IMAGE1.ImageUrl;
+            p.Prezzo = p.Prezzo * p.Quantita;
+            p.PrezzoScontato = p.PrezzoScontato * p.Quantita;
+            if(p.PrezzoScontato > 0)
+            {
+                p.TotCarrello = p.PrezzoScontato;
+            }
+            else
+            {
+            p.TotCarrello = p.Prezzo;
+            }
+
+            Prodotto.Carrello.Add(p);
         }
     }
 }
