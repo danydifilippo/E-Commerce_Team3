@@ -28,7 +28,7 @@ namespace E_Commerce_Team3
         {
             Prodotto.Carrello.Clear();
             GridView1.Visible = false;
-            lblEmptyCart.Text = " <a href=\"Home.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a><hr />";
+            lblEmptyCart.Text = " <a class=\"mt-5\" href=\"Home.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a><hr />";
         }
     }
 }

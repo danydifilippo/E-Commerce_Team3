@@ -51,6 +51,30 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+         <footer class="footer mt-5">
+                <div class="bg-light rounded d-flex justify-content-evenly align-items-center p-3 w-100">
+                    <div>
+                        <p class="text-dark">&copy; Company 2022</p>
+                    </div>
+
+                    <div>
+                        <ul class="mb-2 mb-lg-0 d-flex list-unstyled  ">
+                            <li>
+                                <a href="mailto:example@mail.it" class="btn btn-light"><i class="bi bi-envelope-at-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class="btn btn-light"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://it-it.facebook.com/" class="btn btn-light"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="tel:0123456789" class="btn btn-light"><i class="bi bi-telephone"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
     </form>
     <script src="../Scripts/bootstrap.bundle.min.js"></script>
 </body>
