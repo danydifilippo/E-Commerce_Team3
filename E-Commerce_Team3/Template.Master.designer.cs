@@ -42,6 +42,15 @@ namespace E_Commerce_Team3
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
+        /// Controllo lblWelcome.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblWelcome;
+
+        /// <summary>
         /// Controllo Repeater1.
         /// </summary>
         /// <remarks>
@@ -57,16 +66,7 @@ namespace E_Commerce_Team3
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Enter;
-
-        /// <summary>
-        /// Controllo lblWelcome.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWelcome;
+        protected global::System.Web.UI.WebControls.LinkButton Enter;
 
         /// <summary>
         /// Controllo LinkButton1.

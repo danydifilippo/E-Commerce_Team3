@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace E_Commerce_Team3
 {
@@ -20,8 +21,8 @@ namespace E_Commerce_Team3
                     lbSottotitolo.Text = p.Sottotitolo;
                     lblDescrizione.Text = p.Descrizione;
                     lbPrezzo.Text = p.Prezzo.ToString("c2");
-                    lbPrezzoScontato.Text = p.PrezzoScontato.ToString("c2");
-                    if (p.PrezzoScontato > 0)
+                    lbPrezzoScontato.Text = $"<p class=\"text - secondary text - uppercase\"><b> Prezzo in promozione: { p.PrezzoScontato.ToString("c2")}! </b></p>";
+            if (p.PrezzoScontato > 0)
             {
                 lbPrezzoScontato.Visible = true;
             }

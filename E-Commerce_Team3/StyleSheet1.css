@@ -2,6 +2,11 @@
     width: 100vw;
     height: 100vh;
     position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
 }
 
 .container {
@@ -27,21 +32,11 @@
 }
 
 .slider {
-    margin-right:7em;
+    margin-right:14em;
     margin-top:10em;
     max-width: 900px;
 }
 
-.navlink {
-    text-decoration:none;
-    color:black;
-    margin-right: 10px
-}
-
-    .navlink:hover {
-        text-decoration: underline;
-        text-decoration-color: #2c7f97;
-    }
 
 #links {
     justify-content:center
@@ -73,7 +68,7 @@
     border-radius: 1cm
 }
 
-#ContentPlaceHolder1_AddToCart {
+.btn-outline-primary {
     --bs-btn-border-color: #2c7f97;
     --bs-btn-hover-bg: #2c7f97;
     --bs-btn-hover-color: white;
@@ -135,6 +130,17 @@ tbody:first-child td {
 }
 
 .btn-primary {
-    --bs-btn-bg: #2c7f97;
+    --bs-btn-bg: white;
     --bs-btn-border-color: #2c7f97;
+    --bs-btn-color: #2c7f97;
+    --bs-btn-hover-bg: #2c7f97;
+    --bs-btn-hover-border-color: #2c7f97;
+    --bs-btn-active-bg: #2c7f97;
+    --bs-btn-active-border-color: #2c7f97;
 }
+
+.dropdown-menu {
+    --bs-dropdown-color: #2c7f97;
+    --bs-dropdown-link-color: #2c7f97;
+}
+

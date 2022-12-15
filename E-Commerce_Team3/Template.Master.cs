@@ -67,5 +67,6 @@ namespace E_Commerce_Team3
             Enter.Visible = true;
 
         }
+
     }
 }

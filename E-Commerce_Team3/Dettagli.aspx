@@ -17,12 +17,11 @@
                         <p class="card-text"><asp:Label ID="lblDescrizione" runat="server" Font-Size="10"></asp:Label></p>
                         <hr />
                         <p> Prezzo: <asp:Label ID="lbPrezzo" runat="server" Font-Bold="true"></asp:Label></p>
-                        <p class="text-secondary text-uppercase"><b> Prezzo in promozione: <asp:Label ID="lbPrezzoScontato" runat="server" Visible="false"></asp:Label> ! </b></p>
+                       <asp:Label ID="lbPrezzoScontato" runat="server" Visible="false"></asp:Label>
                         <hr />
                         <div>
                         <asp:TextBox ID="TextBox1" runat="server" TextMode="Number" min="1"></asp:TextBox>
-                         <asp:Button ID="AddToCart" runat="server" Text="Aggiungi al Carrello" OnClick="AddToCart_Click"
-                             class="btn btn-outline-primary"/>
+                         <asp:Button ID="AddToCart" runat="server" Text="Aggiungi al Carrello" OnClick="AddToCart_Click" CssClass="btn btn-outline-primary"/>
                             <asp:LinkButton class="btn btn-outline-secondary" ID="LinkButton1" runat="server" PostBackUrl="~/Carrello.aspx">Vai al Carrello</asp:LinkButton>
                         </div>
                     </div>

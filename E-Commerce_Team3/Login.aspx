@@ -7,7 +7,9 @@
          <img src="img/user.png" id="imgLogin" /> <br />
          <asp:TextBox ID="txtUsername" runat="server" placeholder="Username" CssClass="inputLogin"></asp:TextBox> 
             <asp:TextBox ID="txtPassword" runat="server" placeholder="Password" CssClass="inputLogin"></asp:TextBox> <br />
-            <asp:Button ID="Entra" runat="server" Text="Login" OnClick="Entra_Click"  /><br />
+        <hr />
+
+            <asp:Button ID="Entra" runat="server" Text="Entra e accomodati" OnClick="Entra_Click" CssClass="btn btn-outline-primary" /><br />
             <asp:Label ID="lblLogin" runat="server" Text="" ForeColor="#cc6600"></asp:Label>
             
 
