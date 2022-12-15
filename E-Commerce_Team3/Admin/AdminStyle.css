@@ -1,0 +1,49 @@
+﻿body {
+   width:100vw;
+   height:100vh;
+}
+.btn-primary {
+    --bs-btn-bg: white;
+    --bs-btn-border-color: #2c7f97;
+    --bs-btn-color: #2c7f97;
+    --bs-btn-hover-bg: #2c7f97;
+    --bs-btn-hover-border-color: #2c7f97;
+    --bs-btn-active-bg: #2c7f97;
+    --bs-btn-active-border-color: #2c7f97;
+}
+
+.dropdown-menu {
+    --bs-dropdown-color: #2c7f97;
+    --bs-dropdown-link-color: #2c7f97;
+}
+
+#UpdColor {
+    color: #2c7f97;
+    font-size: 23px;
+    text-align:center
+}
+
+#DelColor {
+    color: #9f709c;
+    font-size: 23px;
+    text-align: center
+}
+
+.imgMag:hover{
+    transition:ease-in-out 0.3s;
+    transform: scale(1.9)
+}
+
+.form-control {
+    background-color: aliceblue;
+}
+
+.btn-secondary {
+    --bs-btn-bg: white;
+    --bs-btn-border-color: #9f709c;
+    --bs-btn-color: #9f709c;
+    --bs-btn-hover-bg: #9f709c;
+    --bs-btn-hover-border-color: #9f709c;
+    --bs-btn-active-bg: #9f709c;
+    --bs-btn-active-border-color: #9f709c;
+}

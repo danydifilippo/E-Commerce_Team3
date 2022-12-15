@@ -40,7 +40,7 @@ namespace E_Commerce_Team3
             connection.Open();
 
             SqlCommand command = new SqlCommand();
-            command.CommandText = "SELECT * FROM PRODOTTO";
+            command.CommandText = "SELECT * FROM PRODOTTO FULL JOIN CATEGORIA ON PRODOTTO.IDCATEGORIA = CATEGORIA.IDCATEGORIA";
             command.Connection = connection;
 
             SqlDataReader reader = command.ExecuteReader();
@@ -56,6 +56,7 @@ namespace E_Commerce_Team3
                 p.Descrizione = reader["Descrizione"].ToString();
                 p.UrlImmagine = reader["UrlImmagine"].ToString();
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
+                p.NomeCategoria = reader["NomeCategoria"].ToString();
                 p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
                 if (p.PrezzoScontato > 0)
                 {
@@ -81,10 +82,13 @@ namespace E_Commerce_Team3
             connection.Open();
 
             SqlCommand command = new SqlCommand();
-            command.CommandText = "SELECT * FROM PRODOTTO FULL JOIN CATEGORIA ON CATEGORIA.IDCATEGORIA = PRODOTTO.IDCATEGORIA WHERE IdProdotto=id";
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = "SelectByIdProdotto";
             command.Connection = connection;
 
-            SqlDataReader reader = command.ExecuteReader();
+            command.Parameters.AddWithValue("IdProdotto", id);
+
+            SqlDataReader reader= command.ExecuteReader();
 
             Prodotto p = new Prodotto();
             while (reader.Read())
@@ -98,6 +102,7 @@ namespace E_Commerce_Team3
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
                 p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
                 p.NomeCategoria = reader["NomeCategoria"].ToString();
+                p.InPromozione = reader["InPromozione"].Equals(true);
             }
 
             connection.Close();

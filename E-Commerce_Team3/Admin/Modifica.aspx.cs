@@ -10,10 +10,27 @@ using System.Web.UI.WebControls;
 
 namespace E_Commerce_Team3.Admin
 {
-    public partial class Update : System.Web.UI.Page
+    public partial class Modifica : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string id = Request.QueryString["idProdotto"];
+            Prodotto p = Prodotto.GetProdotto(id);
+
+            lblImage.ImageUrl = $"../img/{p.UrlImmagine}";
+            txtNome.Text = p.NomeProdotto;
+            txtSottotitolo.Text = p.Sottotitolo;
+            txtDescrizione.Text = p.Descrizione;
+            txtPrezzo.Text = Convert.ToDouble(p.Prezzo).ToString("c2");
+            txtPrScontato.Text = Convert.ToDouble(p.PrezzoScontato).ToString("c2");
+            
+
+            if (p.InPromozione)
+            {
+                ckbInPromo.Checked = true;
+            }
+            
+
             if (!IsPostBack)
             {
                 SqlConnection connection = new SqlConnection();
@@ -36,29 +53,14 @@ namespace E_Commerce_Team3.Admin
                     ListItem l = new ListItem(c.NameCategoria, c.IdCategoria.ToString());
                     ddlCategoria.Items.Add(l);
                 }
+                ddlCategoria.Items.Insert(0, p.NomeCategoria) ;
 
-                connection.Close();
-
-                string id = Request.QueryString["idProdotto"];
-
-                Prodotto p = Prodotto.GetProdotto(id);
-
-                lblImage.ImageUrl = $"../img/{p.UrlImmagine}";
-                txtNome.Text = p.NomeProdotto;
-                txtSottotitolo.Text = p.Sottotitolo;
-                txtDescrizione.Text = p.Descrizione;
-                txtPrezzo.Text = Convert.ToDouble(p.Prezzo).ToString("c2");
-                txtPrScontato.Text = Convert.ToDouble(p.PrezzoScontato).ToString("c2");
-                if (p.InPromozione)
-                {
-                    ckbInPromo.Checked = true;
-                }
-                ddlCategoria.Text = p.NomeCategoria.ToString();
-                
+                connection.Close();               
             }
         }
+  
 
-        protected void Modifica_Click(object sender, EventArgs e)
+        protected void Update_Click(object sender, EventArgs e)
         {
             string id = Request.QueryString["idProdotto"];
 
@@ -98,7 +100,7 @@ namespace E_Commerce_Team3.Admin
                     command.Parameters.AddWithValue("InPromozione", false);
                 }
 
-                command.Parameters.AddWithValue("IdCategoria", lblCategoria.Text);
+                command.Parameters.AddWithValue("IdCategoria", ddlCategoria.SelectedItem.Text);
 
                 int row = command.ExecuteNonQuery();
 
@@ -113,6 +115,11 @@ namespace E_Commerce_Team3.Admin
             {
                 lblError.Visible = true; lblError.Text = "Non è stato possibile modificare il prodotto"; ;
             }
+        }
+
+        protected void Annulla_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Magazzino.aspx");
         }
     }
 }

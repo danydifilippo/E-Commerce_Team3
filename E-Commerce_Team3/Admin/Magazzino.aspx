@@ -1,10 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Magazzino_.aspx.cs" Inherits="E_Commerce_Team3.Admin.Magazzino_" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Magazzino.aspx.cs" Inherits="E_Commerce_Team3.Admin.Magazzino" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    
-           <div class="mx-5">
+     <div class="mx-5">
                <asp:GridView ID="GridView1" runat="server" ItemType="E_Commerce_Team3.Prodotto" CssClass="table table-bordered" AutoGenerateColumns="false">
                    
                    <Columns>
@@ -50,17 +48,23 @@
                        </asp:TemplateField>
                        <asp:TemplateField HeaderText="Immagine">
                            <ItemTemplate>
-                               <img src="../img/<%# Item.UrlImmagine %>" width="60"></img>
+                              <div class="text-center">
+                               <img class="imgMag" src="../img/<%# Item.UrlImmagine %>" width="60"></img>
+                                  </div>
                            </ItemTemplate>
                        </asp:TemplateField>
                        <asp:TemplateField HeaderText="Modifica">
                            <ItemTemplate>
-                                <a href="Update.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-pencil-square"></i></a>
+                               <div class="text-center">
+                                   <a id="UpdColor" href="Modifica.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-pencil-square"></i></a>
+                               </div>
                            </ItemTemplate>
                        </asp:TemplateField>
                        <asp:TemplateField HeaderText="Cancella">
                            <ItemTemplate>
-                               <a href="Delete.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-trash3-fill"></i></a>
+                               <div class="text-center">
+                                   <a id="DelColor" href="Cancella.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-trash3-fill"></i></a>
+                               </div>
                            </ItemTemplate>
                        </asp:TemplateField>
                    </Columns>

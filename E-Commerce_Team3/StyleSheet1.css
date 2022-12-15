@@ -133,3 +133,8 @@ tr:nth-child(odd) {
 tbody:first-child td {
     width: 5% !important;
 }
+
+.btn-primary {
+    --bs-btn-bg: #2c7f97;
+    --bs-btn-border-color: #2c7f97;
+}

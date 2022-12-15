@@ -11,7 +11,7 @@ namespace E_Commerce_Team3.Admin
 {
 
 
-    public partial class Update
+    public partial class Modifica
     {
 
         /// <summary>
@@ -186,12 +186,21 @@ namespace E_Commerce_Team3.Admin
         protected global::System.Web.UI.WebControls.DropDownList ddlCategoria;
 
         /// <summary>
-        /// Controllo Modifica.
+        /// Controllo Update.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Modifica;
+        protected global::System.Web.UI.WebControls.Button Update;
+
+        /// <summary>
+        /// Controllo Annulla.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Annulla;
     }
 }

@@ -68,9 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AddProduct.aspx" />
-    <Content Include="Admin\Delete.aspx" />
-    <Content Include="Admin\Magazzino_.aspx" />
-    <Content Include="Admin\Update.aspx" />
+    <Content Include="Admin\AdminStyle.css" />
+    <Content Include="Admin\Cancella.aspx" />
+    <Content Include="Admin\Magazzino.aspx" />
+    <Content Include="Admin\Modifica.aspx" />
     <Content Include="Carrello.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -140,26 +141,26 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
+    <Compile Include="Admin\Cancella.aspx.cs">
+      <DependentUpon>Cancella.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
+    <Compile Include="Admin\Cancella.aspx.designer.cs">
+      <DependentUpon>Cancella.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Magazzino_.aspx.cs">
-      <DependentUpon>Magazzino_.aspx</DependentUpon>
+    <Compile Include="Admin\Magazzino.aspx.cs">
+      <DependentUpon>Magazzino.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Magazzino_.aspx.designer.cs">
-      <DependentUpon>Magazzino_.aspx</DependentUpon>
+    <Compile Include="Admin\Magazzino.aspx.designer.cs">
+      <DependentUpon>Magazzino.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Update.aspx.cs">
-      <DependentUpon>Update.aspx</DependentUpon>
+    <Compile Include="Admin\Modifica.aspx.cs">
+      <DependentUpon>Modifica.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Update.aspx.designer.cs">
-      <DependentUpon>Update.aspx</DependentUpon>
+    <Compile Include="Admin\Modifica.aspx.designer.cs">
+      <DependentUpon>Modifica.aspx</DependentUpon>
     </Compile>
     <Compile Include="Carrello.aspx.cs">
       <DependentUpon>Carrello.aspx</DependentUpon>

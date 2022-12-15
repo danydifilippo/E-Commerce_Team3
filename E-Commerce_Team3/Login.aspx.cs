@@ -43,7 +43,7 @@ namespace E_Commerce_Team3
 
                    
                     if (user == "admin")
-                    { Response.Redirect("/Admin/Magazzino_.aspx"); }
+                    { Response.Redirect("/Admin/Magazzino.aspx"); }
                     else { Response.Redirect(FormsAuthentication.DefaultUrl); }
                 }
                else

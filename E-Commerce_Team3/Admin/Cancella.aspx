@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="E_Commerce_Team3.Admin.Delete" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Cancella.aspx.cs" Inherits="E_Commerce_Team3.Admin.Cancella" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="container">
+     <div class="container">
     <asp:Label ID="lblDelete" runat="server" Text="" Visible="false"></asp:Label>
     <asp:Label ID="lblError" runat="server" Text="" Visible="false"></asp:Label>
     </div>
@@ -20,10 +19,8 @@
                         <p class="card-text"><asp:Label ID="lblDescrizione" runat="server" Font-Size="10"></asp:Label></p>
                         <hr />
                         <div>
-                           <asp:Button ID="return" runat="server" Text="Torna al magazzino" OnClick="return_Click"
-                             CssClass="btn btn-outline-primary"/>
-                       <asp:Button ID="Delete" runat="server" Text="Elimina Articolo" OnClick="Delete_Click"
-                             CssClass="btn btn-outline-secondary"/>
+                           <asp:Button ID="return" runat="server" Text="Torna al magazzino" CssClass="btn btn-outline-primary" OnClick="return_Click" />
+                       <asp:Button ID="DeletePr" runat="server" Text="Elimina Articolo" CssClass="btn btn-outline-secondary" OnClick="DeletePr_Click" />
      
                          
                         </div>
