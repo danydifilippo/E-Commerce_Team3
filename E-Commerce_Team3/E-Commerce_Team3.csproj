@@ -73,6 +73,7 @@
     <Content Include="Admin\Magazzino.aspx" />
     <Content Include="Admin\Modifica.aspx" />
     <Content Include="Carrello.aspx" />
+    <Content Include="Contatti.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -92,6 +93,7 @@
     <Content Include="Dettagli.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="img\astratto-sfocatura.jpg" />
     <Content Include="img\divano3.png" />
     <Content Include="img\divanoChaiseLong.png" />
     <Content Include="img\divanog.png" />
@@ -171,6 +173,20 @@
     </Compile>
     <Compile Include="Classi\Categoria.cs" />
     <Compile Include="Classi\DbConnection.cs" />
+    <Compile Include="Contatti.aspx.cs">
+      <DependentUpon>Contatti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contatti.aspx.designer.cs">
+      <DependentUpon>Contatti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContattiM.Master.cs">
+      <DependentUpon>ContattiM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContattiM.Master.designer.cs">
+      <DependentUpon>ContattiM.Master</DependentUpon>
+    </Compile>
     <Compile Include="Dettagli.aspx.cs">
       <DependentUpon>Dettagli.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,6 +247,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Admin\Web.config" />
     <Content Include="Admin\Admin.Master" />
+    <Content Include="ContattiM.Master" />
     <None Include="packages.config" />
     <Content Include="Template.Master" />
     <Content Include="Scripts\bootstrap.min.js.map" />
