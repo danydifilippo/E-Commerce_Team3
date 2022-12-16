@@ -93,27 +93,6 @@
     <Content Include="Dettagli.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
-    <Content Include="img\divano3.png" />
-    <Content Include="img\divanoChaiseLong.png" />
-    <Content Include="img\divanog.png" />
-    <Content Include="img\divanoNewStylish.jpg" />
-    <Content Include="img\hightchair.jpg" />
-    <Content Include="img\newstyle.jpg" />
-    <Content Include="img\poltr.jpg" />
-    <Content Include="img\poltrona1.jpg" />
-    <Content Include="img\regina.jpg" />
-    <Content Include="img\chair.jpg" />
-    <Content Include="img\sedia.jpg" />
-    <Content Include="img\sedia2.jpg" />
-    <Content Include="img\sedia3.jpg" />
-    <Content Include="img\sedia4.jpg" />
-    <Content Include="img\sofa-logo.png" />
-    <Content Include="img\sofa2.jpg" />
-    <Content Include="img\sofagrey.jpg" />
-    <Content Include="img\sp_offer.png" />
-    <Content Include="img\treech.jpg" />
-    <Content Include="img\treechair.jpg" />
-    <Content Include="img\user.png" />
     <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -254,6 +233,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
