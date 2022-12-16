@@ -23,7 +23,7 @@
     --bs-dropdown-link-color: #2c7f97;
 }
 
-#UpdColor {
+.UpdColor {
     color: #2c7f97;
     font-size: 23px;
     text-align:center

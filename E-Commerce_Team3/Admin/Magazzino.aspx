@@ -41,6 +41,11 @@
                                <asp:Label ID="lblPromo" runat="server" Text="<%# Item.LogoInPromo %>" Font-Size="12px"></asp:Label>
                            </ItemTemplate>
                        </asp:TemplateField>
+                       <asp:TemplateField HeaderText="Oscurata">
+                           <ItemTemplate>
+                               <asp:Label ID="lblOscurato" runat="server" Text="<%# Item.PrOscurato %>" Font-Size="12px"></asp:Label>
+                           </ItemTemplate>
+                       </asp:TemplateField>
                        <asp:TemplateField HeaderText="Prezzo in Promo">
                            <ItemTemplate>
                                <asp:Label ID="lblPrPromo" runat="server" Text="<%# Item.PrezzoScontato %>" Font-Size="12px"></asp:Label>
@@ -56,7 +61,14 @@
                        <asp:TemplateField HeaderText="Modifica">
                            <ItemTemplate>
                                <div class="text-center">
-                                   <a id="UpdColor" href="Modifica.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-pencil-square"></i></a>
+                                   <a href="Modifica.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-pencil-square UpdColor"></i></a>
+                               </div>
+                           </ItemTemplate>
+                       </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Spegni Prodotto">
+                           <ItemTemplate>
+                               <div class="text-center">
+                                   <a href="SpegniProdotto.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-trash3-fill UpdColor"></i></a>
                                </div>
                            </ItemTemplate>
                        </asp:TemplateField>

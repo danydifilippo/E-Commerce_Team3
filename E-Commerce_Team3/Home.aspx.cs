@@ -34,6 +34,7 @@ namespace E_Commerce_Team3
                     while (reader.Read())
                     {
                         Prodotto p = new Prodotto();
+
                         p.IdProdotto = Convert.ToInt32(reader["IdProdotto"]);
                         p.NomeProdotto = reader["NomeProdotto"].ToString();
                         p.Sottotitolo = reader["Sottotitolo"].ToString();
@@ -41,6 +42,7 @@ namespace E_Commerce_Team3
                         p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
                         p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
                         p.PrezzoInPromo = "Prezzo in Promo a: ";
+                        p.Oscurata = Convert.ToBoolean(reader["Pr_Oscurato"]);
                         if (p.PrezzoScontato > 0)
                         {
                             p.InPromozione = true;
@@ -51,7 +53,10 @@ namespace E_Commerce_Team3
                             p.InPromozione = false;
                             p.LogoInPromo = "";
                         }
-                        Prodotto.listProdotti.Add(p);
+                        if (p.Oscurata == false)
+                        {
+                             Prodotto.listProdotti.Add(p);
+                        }
                         
                     }
 

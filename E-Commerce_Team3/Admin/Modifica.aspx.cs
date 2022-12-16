@@ -124,5 +124,6 @@ namespace E_Commerce_Team3.Admin
         {
             Response.Redirect("Magazzino.aspx");
         }
+
     }
 }

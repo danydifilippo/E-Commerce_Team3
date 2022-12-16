@@ -31,6 +31,10 @@ namespace E_Commerce_Team3
 
         public double TotCarrello { get; set; }
 
+        public bool Oscurata { get; set; }
+
+        public string PrOscurato { get; set; }
+
         public static List<Prodotto> GetAllProdotti()
         {
             List<Prodotto> lProdotti = new List<Prodotto>();
@@ -58,6 +62,7 @@ namespace E_Commerce_Team3
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
                 p.NomeCategoria = reader["NomeCategoria"].ToString();
                 p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
+                p.Oscurata = Convert.ToBoolean(reader["Pr_Oscurato"]);
                 if (p.PrezzoScontato > 0)
                 {
                     p.LogoInPromo = "si";
@@ -66,7 +71,14 @@ namespace E_Commerce_Team3
                 {
                     p.LogoInPromo = "no";
                 }
+                if(p.Oscurata == false)
+                { 
+                    p.PrOscurato = "no";
+                }
+                else { p.PrOscurato = "si"; }
+
                 lProdotti.Add(p);
+                
             }
             connection.Close();
 
@@ -103,7 +115,8 @@ namespace E_Commerce_Team3
                 p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
                 p.IdCategoria = Convert.ToInt32(reader["IdCategoria"]);
                 p.NomeCategoria = reader["NomeCategoria"].ToString();
-                p.InPromozione = reader["InPromozione"].Equals(true);
+                p.InPromozione = Convert.ToBoolean(reader["InPromozione"]);
+                p.Oscurata = Convert.ToBoolean(reader["Pr_Oscurato"]);
             }
 
             connection.Close();
