@@ -68,7 +68,7 @@
                         <asp:TemplateField HeaderText="Spegni Prodotto">
                            <ItemTemplate>
                                <div class="text-center">
-                                   <a href="SpegniProdotto.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-trash3-fill UpdColor"></i></a>
+                                   <a href="SpegniProdotto.aspx?IdProdotto=<%# Item.IdProdotto %>"><i class="bi bi-eye-fill UpdColor"></i></a>
                                </div>
                            </ItemTemplate>
                        </asp:TemplateField>

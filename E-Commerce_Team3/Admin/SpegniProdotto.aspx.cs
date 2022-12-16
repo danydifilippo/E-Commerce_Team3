@@ -42,7 +42,6 @@ namespace E_Commerce_Team3.Admin
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ECommerce"].ToString();
             connection.Open();
 
-
             SqlCommand command = new SqlCommand();
 
             int o = 0;
@@ -63,7 +62,7 @@ namespace E_Commerce_Team3.Admin
             {
                 lblDelete.Visible = true;
                 lblDelete.Text = "Articolo modificato con successo";
-
+                IdLabel.Attributes["class"] = "container m-2 text-center";
             }
 
             connection.Close();
@@ -72,6 +71,7 @@ namespace E_Commerce_Team3.Admin
             {
                 lblError.Visible = true;
                 lblError.Text = "Articolo non modificato";
+                IdLabel.Attributes["class"] = "container m-2 text-center";
             }
 }
     }

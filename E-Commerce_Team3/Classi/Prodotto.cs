@@ -155,6 +155,7 @@ namespace E_Commerce_Team3
                 p.Prezzo = Convert.ToDouble(reader["Prezzo"]);
                 p.PrezzoScontato = Convert.ToDouble(reader["PrezzoScontato"]);
                 p.PrezzoInPromo = "Prezzo in Promo a: ";
+                p.Oscurata = Convert.ToBoolean(reader["Pr_Oscurato"]);
                 if (p.PrezzoScontato > 0)
                 {
                     p.InPromozione = true;
@@ -167,7 +168,10 @@ namespace E_Commerce_Team3
                     p.InPromozione = false;
                     p.LogoInPromo = "";
                 }
-                lProdotti.Add(p);
+                if (p.Oscurata == false)
+                {
+                    lProdotti.Add(p);
+                }
             }
 
             connection.Close();

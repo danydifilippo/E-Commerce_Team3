@@ -19,8 +19,8 @@
                         <p class="card-text"><asp:Label ID="lblDescrizione" runat="server" Font-Size="10"></asp:Label></p>
                         <hr />
                         <div>
-                           <asp:Button ID="return" runat="server" Text="Torna al magazzino" CssClass="btn btn-primary" OnClick="return_Click" />
-                       <asp:Button ID="SpegniPr" runat="server" Text="Spegni Articolo" CssClass="btn btn-secondary"  OnClick="SpegniPr_Click" />
+                        <asp:Button ID="return" runat="server" Text="Torna al magazzino" CssClass="btn btn-primary" OnClick="return_Click" />
+                       <asp:Button ID="SpegniPr" runat="server" Text="Spegni/Accendi Articolo" CssClass="btn btn-secondary"  OnClick="SpegniPr_Click" />
      
                          
                         </div>
