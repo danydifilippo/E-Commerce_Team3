@@ -57,7 +57,8 @@ namespace E_Commerce_Team3.Admin
 
                 
                 IdContainer.Attributes.Add("class", "d-none");
-                
+
+                IdLabel.Attributes["class"] = "container m-2 text-center";
 
             }
             catch (Exception)

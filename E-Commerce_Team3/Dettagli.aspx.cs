@@ -52,6 +52,9 @@ namespace E_Commerce_Team3
             }
 
             Prodotto.Carrello.Add(p);
+
+            lblScheda.Attributes["class"] = "d-none";
+            lblCarrello.Attributes["class"] = "container d-flex justify-content-around m-5";
         }
     }
 }

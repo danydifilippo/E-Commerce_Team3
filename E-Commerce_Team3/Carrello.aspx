@@ -42,7 +42,7 @@
         <asp:Label CssClass="float-end p-2" ID="Label1" runat="server" Text="Label"></asp:Label>
             </div>
         <div>
-        <asp:Button CssClass="btn btn-outline-primary p-2" ID="Shop" runat="server" Text="Continua gli acquisti" />
+        <asp:Button CssClass="btn btn-outline-primary p-2" ID="Shop" PostBackUrl="~/Home.aspx" runat="server" Text="Continua gli acquisti" />
         <asp:Button CssClass="btn btn-outline-secondary float-end p-2" ID="SvuotaCestino" runat="server" Text="Svuota cestino" OnClick="SvuotaCestino_Click" />
             </div>
     </div>

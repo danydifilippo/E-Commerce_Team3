@@ -15,6 +15,15 @@ namespace E_Commerce_Team3.Admin
     {
 
         /// <summary>
+        /// Controllo IdLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl IdLabel;
+
+        /// <summary>
         /// Controllo lblDelete.
         /// </summary>
         /// <remarks>

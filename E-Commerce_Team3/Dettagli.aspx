@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
    
-    <div class="container m-5">
+    <div class="container m-5" id="lblScheda" runat="server">
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-4 mt-2">
@@ -28,5 +28,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container d-none" id="lblCarrello" runat="server">
+        <asp:LinkButton class="btn btn-outline-primary" ID="gotoHome" runat="server" PostBackUrl="~/Home.aspx">Continua gli acquisti</asp:LinkButton>
+        <asp:LinkButton class="btn btn-outline-secondary" ID="goToCart" runat="server" PostBackUrl="~/Carrello.aspx">Vai al Carrello</asp:LinkButton>
     </div>
 </asp:Content>

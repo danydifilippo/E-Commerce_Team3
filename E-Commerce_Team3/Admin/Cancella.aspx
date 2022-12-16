@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container">
+     <div class="container d-none" style="height:100vh" id="IdLabel" runat="server" >
     <asp:Label ID="lblDelete" runat="server" Text="" Visible="false"></asp:Label>
     <asp:Label ID="lblError" runat="server" Text="" Visible="false"></asp:Label>
     </div>
-        <div class="container m-5" runat="server" id="IdContainer">
+        <div class="container m-5 " runat="server" id="IdContainer">
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-4 mt-2">
