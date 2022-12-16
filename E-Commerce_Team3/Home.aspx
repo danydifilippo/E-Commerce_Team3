@@ -5,7 +5,7 @@
 
     <div class="row mt-4  justify-content-between w-75 ">
         
-         <asp:Label ID="lblError" runat="server" Text="" Visible="false" CssClass="navlink"></asp:Label>
+         <asp:Label ID="lblError" runat="server" Text="" Visible="false" CssClass="navlink text-center m-2"></asp:Label>
                         <asp:Label ID="lblInPromo" runat="server" Text="" Visible="false"><img src="img/offer.png" /></asp:Label>
         <asp:Repeater ID="Repeater1" runat="server" ItemType="E_Commerce_Team3.Prodotto">
             <ItemTemplate >

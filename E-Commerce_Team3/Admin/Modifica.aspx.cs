@@ -53,7 +53,7 @@ namespace E_Commerce_Team3.Admin
                     ListItem l = new ListItem(c.NameCategoria, c.IdCategoria.ToString());
                     ddlCategoria.Items.Add(l);
                 }
-                ddlCategoria.Items.Insert(0, p.NomeCategoria) ;
+                ddlCategoria.SelectedValue= p.IdCategoria.ToString() ;
 
                 connection.Close();               
             }
@@ -80,10 +80,10 @@ namespace E_Commerce_Team3.Admin
                 command.Parameters.AddWithValue("NomeProdotto", txtNome.Text);
                 command.Parameters.AddWithValue("Descrizione", txtDescrizione.Text);
                 command.Parameters.AddWithValue("Sottotitolo", txtSottotitolo.Text);
-                command.Parameters.AddWithValue("Prezzo", txtPrezzo.Text);
-                command.Parameters.AddWithValue("PrezzoScontato", txtPrScontato.Text);
+                command.Parameters.AddWithValue("Prezzo", Convert.ToDouble(txtPrezzo.Text));
+                command.Parameters.AddWithValue("PrezzoScontato", Convert.ToDouble(txtPrScontato.Text));
 
-                if (FileUpload1 != null)
+                if (FileUpload1.ToString() == "")
                 {
                     command.Parameters.AddWithValue("UrlImmagine", p.UrlImmagine);
                 }
@@ -100,7 +100,10 @@ namespace E_Commerce_Team3.Admin
                     command.Parameters.AddWithValue("InPromozione", false);
                 }
 
-                command.Parameters.AddWithValue("IdCategoria", ddlCategoria.SelectedItem.Text);
+
+
+                command.Parameters.AddWithValue("IdCategoria", ddlCategoria.SelectedItem.Value);
+                
 
                 int row = command.ExecuteNonQuery();
 
@@ -113,7 +116,7 @@ namespace E_Commerce_Team3.Admin
             }
             catch (Exception)
             {
-                lblError.Visible = true; lblError.Text = "Non è stato possibile modificare il prodotto"; ;
+                lblError.Visible = true; lblError.Text = "Non è stato possibile modificare il prodotto";
             }
         }
 

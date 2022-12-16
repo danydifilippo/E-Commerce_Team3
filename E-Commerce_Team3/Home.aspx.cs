@@ -26,13 +26,11 @@ namespace E_Commerce_Team3
                     connection.Open();
 
                     SqlCommand command = new SqlCommand();
-                    command.CommandText = "SELECT * FROM PRODOTTO";
+                    command.CommandText = "SELECT * FROM PRODOTTO FULL JOIN CATEGORIA ON PRODOTTO.IDCATEGORIA = CATEGORIA.IDCATEGORIA";
                     command.Connection = connection;
 
                     SqlDataReader reader = command.ExecuteReader();
-
-                    
-
+              
                     while (reader.Read())
                     {
                         Prodotto p = new Prodotto();
@@ -46,9 +44,7 @@ namespace E_Commerce_Team3
                         if (p.PrezzoScontato > 0)
                         {
                             p.InPromozione = true;
-                            p.LogoInPromo = "img/sp_offer.png";
-                            
-                            
+                            p.LogoInPromo = "img/sp_offer.png"; 
                         }
                         else
                         {

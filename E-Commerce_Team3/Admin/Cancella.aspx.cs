@@ -21,6 +21,8 @@ namespace E_Commerce_Team3.Admin
             lbNomeProdotto.Text = p.NomeProdotto;
             lbSottotitolo.Text = p.Sottotitolo;
             lblDescrizione.Text = p.Descrizione;
+
+
         }
 
         protected void return_Click(object sender, EventArgs e)
@@ -52,6 +54,11 @@ namespace E_Commerce_Team3.Admin
                     lblDelete.Text = "Articolo eliminato con successo";
                 }
                 connection.Close();
+
+                
+                IdContainer.Attributes.Add("class", "d-none");
+                
+
             }
             catch (Exception)
             {

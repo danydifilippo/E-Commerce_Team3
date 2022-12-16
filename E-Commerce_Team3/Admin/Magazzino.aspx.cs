@@ -18,10 +18,5 @@ namespace E_Commerce_Team3.Admin
 
         }
 
-        protected void Update_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Modifica.aspx");
-        }
-
     }
 }

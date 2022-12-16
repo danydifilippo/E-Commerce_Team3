@@ -6,7 +6,7 @@
     <asp:Label ID="lblDelete" runat="server" Text="" Visible="false"></asp:Label>
     <asp:Label ID="lblError" runat="server" Text="" Visible="false"></asp:Label>
     </div>
-        <div class="container m-5">
+        <div class="container m-5" runat="server" id="IdContainer">
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-4 mt-2">
@@ -19,8 +19,8 @@
                         <p class="card-text"><asp:Label ID="lblDescrizione" runat="server" Font-Size="10"></asp:Label></p>
                         <hr />
                         <div>
-                           <asp:Button ID="return" runat="server" Text="Torna al magazzino" CssClass="btn btn-outline-primary" OnClick="return_Click" />
-                       <asp:Button ID="DeletePr" runat="server" Text="Elimina Articolo" CssClass="btn btn-outline-secondary" OnClick="DeletePr_Click" />
+                           <asp:Button ID="return" runat="server" Text="Torna al magazzino" CssClass="btn btn-primary" OnClick="return_Click" />
+                       <asp:Button ID="DeletePr" runat="server" Text="Elimina Articolo" CssClass="btn btn-secondary"  OnClick="DeletePr_Click" />
      
                          
                         </div>

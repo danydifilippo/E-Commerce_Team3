@@ -33,6 +33,15 @@ namespace E_Commerce_Team3.Admin
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
+        /// Controllo IdContainer.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl IdContainer;
+
+        /// <summary>
         /// Controllo Image1.
         /// </summary>
         /// <remarks>

@@ -42,6 +42,15 @@ namespace E_Commerce_Team3
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// Controllo Shop.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Shop;
+
+        /// <summary>
         /// Controllo SvuotaCestino.
         /// </summary>
         /// <remarks>
