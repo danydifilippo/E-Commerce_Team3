@@ -82,6 +82,8 @@ namespace E_Commerce_Team3.Admin
                 command.Parameters.AddWithValue("PrezzoScontato", txtPrScontato.Text);
                 command.Parameters.AddWithValue("IdCategoria", ddlCategoria.SelectedItem.Value);
                 command.Parameters.AddWithValue("UrlImmagine", FileUpload1.FileName);
+              
+
                 if (ckbInPromo.Checked)
                 {
                     command.Parameters.AddWithValue("InPromozione", true);
@@ -103,7 +105,7 @@ namespace E_Commerce_Team3.Admin
 
                 ClearInputs(Page.Controls);
             }
-            catch
+            catch(Exception ex)
             {
 
                 lblError.Text = "Non è stato possibile aggiungere il prodotto..Errore durante la compilazione del form.";

@@ -83,7 +83,7 @@ namespace E_Commerce_Team3.Admin
                 command.Parameters.AddWithValue("Prezzo", Convert.ToDouble(txtPrezzo.Text));
                 command.Parameters.AddWithValue("PrezzoScontato", Convert.ToDouble(txtPrScontato.Text));
 
-                if (FileUpload1.ToString() == "")
+                if (FileUpload1.FileName == "")
                 {
                     command.Parameters.AddWithValue("UrlImmagine", p.UrlImmagine);
                 }
