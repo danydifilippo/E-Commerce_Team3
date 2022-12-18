@@ -67,17 +67,186 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\AdminStyle.css" />
+    <Content Include="Admin\Cancella.aspx" />
+    <Content Include="Admin\Magazzino.aspx" />
+    <Content Include="Admin\Modifica.aspx" />
+    <Content Include="Admin\SpegniProdotto.aspx" />
+    <Content Include="Carrello.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Dettagli.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\chair.jpg" />
+    <Content Include="img\divano3.png" />
+    <Content Include="img\divanoChaiseLong.png" />
+    <Content Include="img\divanog.png" />
+    <Content Include="img\divanoNewStylish.jpg" />
+    <Content Include="img\hightchair.jpg" />
+    <Content Include="img\hightchair_master.jpg" />
+    <Content Include="img\newstyle.jpg" />
+    <Content Include="img\poltr.jpg" />
+    <Content Include="img\poltrona1.jpg" />
+    <Content Include="img\regina.jpg" />
+    <Content Include="img\sedia.jpg" />
+    <Content Include="img\sedia2.jpg" />
+    <Content Include="img\sedia3.jpg" />
+    <Content Include="img\sedia4.jpg" />
+    <Content Include="img\sofa-logo.png" />
+    <Content Include="img\sofa2.jpg" />
+    <Content Include="img\sofagrey.jpg" />
+    <Content Include="img\sp_offer.png" />
+    <Content Include="img\team3.jpg" />
+    <Content Include="img\treech.jpg" />
+    <Content Include="img\treechair.jpg" />
+    <Content Include="img\user.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="SelectByCategory.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cancella.aspx.cs">
+      <DependentUpon>Cancella.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cancella.aspx.designer.cs">
+      <DependentUpon>Cancella.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Magazzino.aspx.cs">
+      <DependentUpon>Magazzino.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Magazzino.aspx.designer.cs">
+      <DependentUpon>Magazzino.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Modifica.aspx.cs">
+      <DependentUpon>Modifica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Modifica.aspx.designer.cs">
+      <DependentUpon>Modifica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SpegniProdotto.aspx.cs">
+      <DependentUpon>SpegniProdotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SpegniProdotto.aspx.designer.cs">
+      <DependentUpon>SpegniProdotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrello.aspx.cs">
+      <DependentUpon>Carrello.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrello.aspx.designer.cs">
+      <DependentUpon>Carrello.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classi\Categoria.cs" />
+    <Compile Include="Classi\DbConnection.cs" />
+    <Compile Include="Dettagli.aspx.cs">
+      <DependentUpon>Dettagli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dettagli.aspx.designer.cs">
+      <DependentUpon>Dettagli.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classi\Prodotto.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectByCategory.aspx.cs">
+      <DependentUpon>SelectByCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectByCategory.aspx.designer.cs">
+      <DependentUpon>SelectByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.Master.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template.Master.designer.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Admin\Web.config" />
+    <Content Include="Admin\Admin.Master" />
     <None Include="packages.config" />
+    <Content Include="Template.Master" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
