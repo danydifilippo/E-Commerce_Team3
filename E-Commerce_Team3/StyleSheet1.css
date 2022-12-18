@@ -13,27 +13,41 @@
     max-width: 1000px;
 }
 
-
-#CarouselSofa {
-    background-image: url('img/poltrona1.jpg');
+.carousel-item {
     background-repeat: no-repeat;
     background-position: center center;
     height: 70vh;
+}
+
+#CarouselPoltrona1 {
+    background-image: url('img/poltrona1.jpg');
     background-color: #e3e9e1;
 }
 
-#CarouselDivani {
+#CarouselNewStyle {
     background-image: url('img/divanonewstylish.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
     background-size: 90%;
-    height: 70vh;
     background-color: #e2eeec;
 }
 
+#CarouselChair {
+    background-image: url('img/chair.jpg');
+    background-color: #efe5da;
+}
+
+#CarouselTreeChair {
+    background-image: url('img/treechair.jpg');
+    background-color: #f0ece6;
+}
+
+#CarouselHighChair {
+    background-image: url('img/hightchair_master.jpg');
+    background-color: #ebe4e4;
+    ;
+}
 .slider {
-    margin-right:11em;
-    margin-top:10em;
+    margin-right: 11em;
+    margin-top: 10em;
     max-width: 900px;
 }
 

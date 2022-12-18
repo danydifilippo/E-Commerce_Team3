@@ -35,6 +35,9 @@ namespace E_Commerce_Team3
 
         public string PrOscurato { get; set; }
 
+        public string PrezzoHome { get ; set; }
+
+
         public static List<Prodotto> GetAllProdotti()
         {
             List<Prodotto> lProdotti = new List<Prodotto>();

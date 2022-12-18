@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -46,12 +47,16 @@ namespace E_Commerce_Team3
                         if (p.PrezzoScontato > 0)
                         {
                             p.InPromozione = true;
-                            p.LogoInPromo = "img/sp_offer.png"; 
+                            p.LogoInPromo = "img/sp_offer.png";
+                            p.PrezzoHome = $"Prezzo in Promo: <span style=\"color:#2c7f97; font-size:20px\" >{p.PrezzoScontato}€</span> <del> {p.Prezzo}€</del>";
+                            
                         }
                         else
                         {
                             p.InPromozione = false;
                             p.LogoInPromo = "";
+                            p.PrezzoHome = $"Prezzo: <span style=\"color:#2c7f97; font-size:20px\" > {p.Prezzo}€</span>";
+
                         }
                         if (p.Oscurata == false)
                         {
@@ -63,7 +68,9 @@ namespace E_Commerce_Team3
                     Repeater1.DataSource = Prodotto.listProdotti;
                     Repeater1.DataBind();
 
-                    connection.Close();
+
+
+                        connection.Close();
 
                 }
                 catch (Exception ex)
@@ -72,6 +79,7 @@ namespace E_Commerce_Team3
                 }
 
             }
+            
         }
     }
     }

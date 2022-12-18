@@ -55,13 +55,31 @@
         </nav>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" runat="server" visible="true">
             <div class="carousel-inner">
-                <div class="carousel-item active container-fluid" id="CarouselSofa" data-bs-interval="7000">
+                <div class="carousel-item active container-fluid" id="CarouselPoltrona1" data-bs-interval="5000">
                     <div class="float-end slider">
                         <h2>Latest Sofa Chair</h2>
                         <p>Guarda le ultime collezioni <br />nella categoria Sofà</p>
                     </div>
                 </div>
-                <div class="carousel-item container-fluid" id="CarouselDivani" data-bs-interval="7000">
+                <div class="carousel-item container-fluid" id="CarouselNewStyle" data-bs-interval="5000">
+                    <div class="float-end slider">
+                        <h2>Latest Divani Chair</h2>
+                        <p>Guarda le ultime collezioni <br />nella categoria Divani</p>
+                    </div>
+                </div>
+                <div class="carousel-item container-fluid" id="CarouselChair" data-bs-interval="5000">
+                    <div class="float-end slider">
+                        <h2>Latest Divani Chair</h2>
+                        <p>Guarda le ultime collezioni <br />nella categoria Divani</p>
+                    </div>
+                </div>
+               <div class="carousel-item container-fluid" id="CarouselTreeChair" data-bs-interval="5000">
+                    <div class="float-end slider">
+                        <h2>Latest Sofa Chair</h2>
+                        <p>Guarda le ultime collezioni <br />nella categoria Sofà</p>
+                    </div>
+                </div>
+                <div class="carousel-item container-fluid" id="CarouselHighChair" data-bs-interval="5000">
                     <div class="float-end slider">
                         <h2>Latest Divani Chair</h2>
                         <p>Guarda le ultime collezioni <br />nella categoria Divani</p>

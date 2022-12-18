@@ -15,7 +15,7 @@
                             <asp:TextBox ID="txtNome" runat="server" CssClass="form-control mb-2" ></asp:TextBox>
 
                             <asp:Label ID="lblSottotitolo" runat="server" Text="Sottotitolo:" CssClass="form-label"></asp:Label>
-                            <asp:TextBox ID="txtSottotitolo" runat="server" CssClass="form-control mb-2" ></asp:TextBox>
+                            <asp:TextBox ID="txtSottotitolo" method="post" runat="server" CssClass="form-control mb-2" ></asp:TextBox>
 
 
                             <asp:Label ID="lblDescrizione" runat="server" Text="Descrizione:" CssClass="form-label"></asp:Label>

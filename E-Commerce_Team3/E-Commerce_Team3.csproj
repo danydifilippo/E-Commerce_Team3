@@ -96,8 +96,10 @@
     <Content Include="img\chair.jpg" />
     <Content Include="img\divano3.png" />
     <Content Include="img\divanoChaiseLong.png" />
+    <Content Include="img\divanog.png" />
     <Content Include="img\divanoNewStylish.jpg" />
     <Content Include="img\hightchair.jpg" />
+    <Content Include="img\hightchair_master.jpg" />
     <Content Include="img\newstyle.jpg" />
     <Content Include="img\poltr.jpg" />
     <Content Include="img\poltrona1.jpg" />
