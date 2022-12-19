@@ -14,25 +14,27 @@ namespace E_Commerce_Team3.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = Request.QueryString["idProdotto"];
-            Prodotto p = Prodotto.GetProdotto(id);
-
-            lblImage.ImageUrl = $"../img/{p.UrlImmagine}";
-            txtNome.Text = p.NomeProdotto;
-            txtSottotitolo.Text = p.Sottotitolo;
-            txtDescrizione.Text = p.Descrizione;
-            txtPrezzo.Text = p.Prezzo.ToString();
-            txtPrScontato.Text = p.PrezzoScontato.ToString();
-            
-
-            if (p.InPromozione)
-            {
-                ckbInPromo.Checked = true;
-            }
-            
-
             if (!IsPostBack)
             {
+                string id = Request.QueryString["idProdotto"];
+                Prodotto p = Prodotto.GetProdotto(id);
+
+                lblImage.ImageUrl = $"../img/{p.UrlImmagine}";
+                txtNome.Text = p.NomeProdotto;
+                txtSottotitolo.Text = p.Sottotitolo;
+                txtDescrizione.Text = p.Descrizione;
+                txtPrezzo.Text = p.Prezzo.ToString();
+                txtPrScontato.Text = p.PrezzoScontato.ToString();
+
+
+                if (p.InPromozione)
+                {
+                    ckbInPromo.Checked = true;
+                }
+
+
+
+
                 SqlConnection connection = new SqlConnection();
                 connection.ConnectionString = ConfigurationManager.ConnectionStrings["ECommerce"].ToString();
                 connection.Open();
@@ -53,10 +55,12 @@ namespace E_Commerce_Team3.Admin
                     ListItem l = new ListItem(c.NameCategoria, c.IdCategoria.ToString());
                     ddlCategoria.Items.Add(l);
                 }
-                ddlCategoria.SelectedValue= p.IdCategoria.ToString() ;
+                ddlCategoria.SelectedValue = p.IdCategoria.ToString();
 
-                connection.Close();               
+                connection.Close();
+
             }
+            
         }
   
 

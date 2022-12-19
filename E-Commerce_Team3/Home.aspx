@@ -22,8 +22,7 @@
                         <p class="card-text mt-2" runat="server"><strong><%# Item.PrezzoHome %></strong></p>
                             <hr />
                         <a href="Dettagli.aspx?IdProdotto=<%# Item.IdProdotto %>" class="btn btn-primary navlink">
-                       <i class="bi bi-search-heart-fill"></i> Dettagli</a>
-                        
+                       <i class="bi bi-search-heart-fill"></i> Dettagli</a>                        
                     </div>
                 </div>
                       </div>
